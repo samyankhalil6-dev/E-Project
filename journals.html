@@ -1,0 +1,1719 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ryana Calenders-Journals</title>
+    <link rel="stylesheet" href="./Assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./Assets/css/style.css">
+    <link rel="stylesheet" href="./Assets/css/bootstrap-icons.css">
+</head>
+
+<body>
+    <!-- NAVBAR START -->
+    <nav class="navbar navbar-expand-lg navbarbg">
+        <div class="container-fluid">
+            <!-- Logo -->
+            <span class="navbar-brand m-0">
+                <img src="./Assets/images/logo.png" alt="Ryana Calendars" class="logo-img">
+            </span>
+            <!-- Toggler/collapsible Button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Navbar Links -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link navitem" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle navitem" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">Products</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Journals</a></li>
+                            <li><a class="dropdown-item" href="./calenders.html">Calenders</a></li>
+                            <li><a class="dropdown-item" href="./diaries.html">Diaries</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link navitem" href="./contact.html#map-section">Location</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link navitem" href="./contact.html#price-list-section">Price List</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link navitem" href="./contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- NAVBAR END -->
+    <!-- ===== Journals Hero Carousel Start ===== -->
+    <div id="journalCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000"
+        aria-label="Journals Carousel">
+        <!-- Indicators / Dots -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#journalCarousel" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#journalCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#journalCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <!-- Slides -->
+        <div class="carousel-inner">
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+                <div class="hero-slide" style="background-image: url('./Assets/images/journals-classic.jpg');">
+                    <!-- Overlay (non-blocking) -->
+                    <div class="overlay" aria-hidden="true"></div>
+                    <!-- Centered caption -->
+                    <div class="carousel-caption d-flex flex-column justify-content-center align-items-center h-100">
+                        <h1 class="fw-bold display-4">Classic Journals</h1>
+                        <p class="lead">Timeless designs for daily notes and reflections.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+                <div class="hero-slide" style="background-image: url('./Assets/images/journals-leather.jpg');">
+                    <div class="overlay" aria-hidden="true"></div>
+                    <div class="carousel-caption d-flex flex-column justify-content-center align-items-center h-100">
+                        <h1 class="fw-bold display-4">Leather Journals</h1>
+                        <p class="lead">Premium handcrafted journals for a luxury touch.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Slide 3 -->
+            <div class="carousel-item">
+                <div class="hero-slide" style="background-image: url('./Assets/images/journals-travel.jpg');">
+                    <div class="overlay" aria-hidden="true"></div>
+                    <div class="carousel-caption d-flex flex-column justify-content-center align-items-center h-100">
+                        <h1 class="fw-bold display-4">Travel Journals</h1>
+                        <p class="lead">Compact and durable journals for your adventures.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#journalCarousel" data-bs-slide="prev">
+            <span class="journal-carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next " type="button" data-bs-target="#journalCarousel" data-bs-slide="next">
+            <span class="journal-carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- ===== Journals Hero Carousel End ===== -->
+    <!-- ===== Journals Categories Start ===== -->
+    <section class="container my-5">
+        <h2 class="text-center fw-bold mb-4">Journal Categories</h2>
+        <div class="row text-center">
+            <!-- Classic Journal -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow-sm category-card">
+                    <img src="./Assets/images/journals-classic.jpg" class="card-img-top" alt="Classic Journal">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Classic Journals</h5>
+                        <p class="card-text">Timeless designs for your daily notes and reflections.</p>
+                        <a href="#classic-products" class="btn btn-warning">Explore</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Leather Journal -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow-sm category-card">
+                    <img src="./Assets/images/journals-leather.jpg" class="card-img-top" alt="Leather Journal">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Leather Journals</h5>
+                        <p class="card-text">Premium leather-bound notebooks for elegance and durability.</p>
+                        <a href="#leather-products" class="btn btn-warning">Explore</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Travel Journal -->
+            <div class="col-md-4 mb-4 cate">
+                <div class="card h-100 shadow-sm category-card">
+                    <img src="./Assets/images/journals-travel.jpg" class="card-img-top" alt="Travel Journal">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Travel Journals</h5>
+                        <p class="card-text">Capture your journeys with style and creativity.</p>
+                        <a href="#travel-products" class="btn btn-warning">Explore</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ===== Journals Categories End ===== -->
+    <div class="container mt-0 mb-0">
+        <div style="border-top: 2px solid #E3B505; width: 100%; margin: 2px;"></div>
+        <div style="border-top: 1px solid #2E2E2E; width: 100%; margin: 2px;"></div>
+    </div>
+    <!-- Classic Journals Products Start -->
+    <section id="classic-products" class="container my-5 ">
+        <h2 class="text-center fw-bold mb-4">Classic Journals</h2>
+        <div class="row">
+            <!-- Product 1 -->
+            <div class="col-md-4 col-sm-6 col-12 mb-4">
+                <article class="pc-card">
+                    <!-- Badge -->
+                    <div class="pc-badge">Best Seller</div>
+                    <!-- Product Image -->
+                    <div class="pc-img">
+                        <img src="./Assets/images/Classic-Journals/classis-product(1).jpg"
+                            alt="Classic Journal - Ruled">
+                    </div>
+                    <!-- Product Info -->
+                    <div class="pc-info">
+                        <div class="pc-cat">Journal</div>
+                        <h2 class="pc-title">Classic Journal - Ruled</h2>
+                        <p class="pc-desc"> Elegant, timeless notebook with ruled pages for everyday writing. Perfect
+                            for students, writers, and professionals.
+                        </p>
+                        <!-- Features -->
+                        <div class="pc-feats">
+                            <span class="pc-feat">200 Pages</span>
+                            <span class="pc-feat">Hardcover</span>
+                            <span class="pc-feat">Premium Paper</span>
+                        </div>
+                        <!-- Price and Actions -->
+                        <div class="pc-bottom">
+                            <div class="pc-price">
+                                <span class="pc-old">$13.99</span>
+                                <span class="pc-new">$10.99</span>
+                            </div>
+                            <div class="pc-actions">
+                                <!-- Download Button -->
+                                <a href="./Assets/docs/Classic Journals/Classic Journal - Ruled.docx"
+                                    class="pc-btn small-btn" title="Download" download
+                                    aria-label="Download Classic Journal Doc">
+                                    <svg class="pc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path d="M12 3v12" />
+                                        <path d="M12 15l-4-4" />
+                                        <path d="M12 15l4-4" />
+                                        <line x1="5" y1="21" x2="19" y2="21" />
+                                    </svg>
+                                </a>
+                                <!-- Add to Cart -->
+                                <a href="#" class="pc-btn" aria-label="Add Classic Journal to Cart">
+                                    <span>Add to Cart</span>
+                                    <svg class="pc-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2">
+                                        <circle cx="9" cy="21" r="1" />
+                                        <circle cx="20" cy="21" r="1" />
+                                        <path d="M1 1h4l2.68 13.39a2 2 0 001.98 1.61h9.72a2 2 0 001.98-1.61L23 6H6" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Ratings and Stock -->
+                        <div class="pc-meta">
+                            <div class="pc-rating">
+                                <!-- Stars -->
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 
+                                            5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 
+                                            5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 
+                                            5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 
+                                            5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 
+                                            5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <span class="pc-rcount">143 Reviews</span>
+                            </div>
+                            <div class="pc-stock">In Stock</div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <!-- Product 2 -->
+            <div class="col-md-4 col-sm-6 col-12 mb-4">
+                <article class="pc-card">
+                    <!-- Badge -->
+                    <div class="pc-badge-new">New Arrival</div>
+                    <!-- Product Image -->
+                    <div class="pc-img">
+                        <img src="./Assets/images/Classic-Journals/classis-product(2).jpg"
+                            alt="Classic Journal - Plain">
+                    </div>
+                    <!-- Product Info -->
+                    <div class="pc-info">
+                        <div class="pc-cat">Journal</div>
+                        <h2 class="pc-title">Classic Journal - Plain</h2>
+                        <p class="pc-desc"> Minimalist design with plain pages, perfect for sketches, creative writing,
+                            and free expression without boundaries.
+                        </p>
+                        <!-- Features -->
+                        <div class="pc-feats">
+                            <span class="pc-feat">Unruled Pages</span>
+                            <span class="pc-feat">Hardcover</span>
+                            <span class="pc-feat">Portable Size</span>
+                        </div>
+                        <!-- Price and Actions -->
+                        <div class="pc-bottom">
+                            <div class="pc-price">
+                                <span class="pc-old">$15.99</span>
+                                <span class="pc-new">$12.99</span>
+                            </div>
+                            <div class="pc-actions">
+                                <!-- Download Button -->
+                                <a href="./Assets/docs/Classic Journals/Classic Journal - Plain.docx"
+                                    class="pc-btn small-btn" title="Download" download
+                                    aria-label="Download Classic Journal Doc">
+                                    <svg class="pc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path d="M12 3v12" />
+                                        <path d="M12 15l-4-4" />
+                                        <path d="M12 15l4-4" />
+                                        <line x1="5" y1="21" x2="19" y2="21" />
+                                    </svg>
+                                </a>
+                                <!-- Add to Cart -->
+                                <a href="#" class="pc-btn" aria-label="Add Classic Journal to Cart">
+                                    <span>Add to Cart</span>
+                                    <svg class="pc-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2">
+                                        <circle cx="9" cy="21" r="1" />
+                                        <circle cx="20" cy="21" r="1" />
+                                        <path d="M1 1h4l2.68 13.39a2 2 0 001.98 1.61h9.72a2 2 0 001.98-1.61L23 6H6" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Ratings and Stock -->
+                        <div class="pc-meta">
+                            <div class="pc-rating">
+                                <!-- Stars -->
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 
+                                            5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 
+                                            5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 
+                                            5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <span class="pc-rcount">95 Reviews</span>
+                            </div>
+                            <div class="pc-stock">In Stock</div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <!-- Product 3 -->
+            <div class="col-md-4 col-sm-6 col-12 mb-4">
+                <article class="pc-card">
+                    <!-- Badge -->
+                    <div class="pc-badge">Best Seller</div>
+                    <!-- Product Image -->
+                    <div class="pc-img">
+                        <img src="./Assets/images/Classic-Journals/classis-product(3).png"
+                            alt="Classic Journal with Patterned Cover">
+                    </div>
+                    <!-- Product Info -->
+                    <div class="pc-info">
+                        <div class="pc-cat">Journal</div>
+                        <h2 class="pc-title">Classic Journal - Patterned</h2>
+                        <p class="pc-desc"> Stylish patterned cover with durable binding, perfect for daily journaling,
+                            notes, and long-lasting use, easy to carry anywhere.
+                        </p>
+                        <!-- Features -->
+                        <div class="pc-feats">
+                            <span class="pc-feat">Patterned Cover</span>
+                            <span class="pc-feat">Durable Binding</span>
+                            <span class="pc-feat">Compact Size</span>
+                        </div>
+                        <!-- Price and Actions -->
+                        <div class="pc-bottom">
+                            <div class="pc-price">
+                                <span class="pc-old">$18.99</span>
+                                <span class="pc-new">$14.99</span>
+                            </div>
+                            <div class="pc-actions">
+                                <!-- Download Button -->
+                                <a href="./Assets/docs/Classic Journals/Classic Journal - Patterned.docx"
+                                    class="pc-btn small-btn" title="Download" download
+                                    aria-label="Download Classic Journal Doc">
+                                    <svg class="pc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path d="M12 3v12" />
+                                        <path d="M12 15l-4-4" />
+                                        <path d="M12 15l4-4" />
+                                        <line x1="5" y1="21" x2="19" y2="21" />
+                                    </svg>
+                                </a>
+                                <!-- Add to Cart -->
+                                <a href="#" class="pc-btn" aria-label="Add Classic Journal to Cart">
+                                    <span>Add to Cart</span>
+                                    <svg class="pc-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2">
+                                        <circle cx="9" cy="21" r="1" />
+                                        <circle cx="20" cy="21" r="1" />
+                                        <path d="M1 1h4l2.68 13.39a2 2 0 001.98 1.61h9.72a2 2 0 001.98-1.61L23 6H6" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Ratings and Stock -->
+                        <div class="pc-meta">
+                            <div class="pc-rating">
+                                <!-- Stars -->
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 
+                                            5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 
+                                            5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 
+                                            5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 
+                                            5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <span class="pc-rcount">120 Reviews</span>
+                            </div>
+                            <div class="pc-stock">In Stock</div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <!-- Product 4 -->
+            <div class="col-md-4 col-sm-6 col-12 mb-4">
+                <article class="pc-card">
+                    <!-- Badge -->
+                    <div class="pc-badge-low">Low Stock</div>
+                    <!-- Product Image -->
+                    <div class="pc-img">
+                        <img src="./Assets/images/Classic-Journals/classis-product(4).png"
+                            alt="Classic Journal with Hardcover">
+                    </div>
+                    <!-- Product Info -->
+                    <div class="pc-info">
+                        <div class="pc-cat">Journal</div>
+                        <h2 class="pc-title">Classic Journal - Hardcover</h2>
+                        <p class="pc-desc"> Durable hardcover design with smooth finish and premium feel. </p>
+                        <!-- Features -->
+                        <div class="pc-feats">
+                            <span class="pc-feat">Hardcover</span>
+                            <span class="pc-feat">Premium Paper</span>
+                            <span class="pc-feat">200 Pages</span>
+                        </div>
+                        <!-- Price and Actions -->
+                        <div class="pc-bottom">
+                            <div class="pc-price">
+                                <span class="pc-old">$18.99</span>
+                                <span class="pc-new">$15.99</span>
+                            </div>
+                            <div class="pc-actions">
+                                <!-- Download Button -->
+                                <a href="./Assets/docs/Classic Journals/Classic Journal - Hardcover.docx"
+                                    class="pc-btn small-btn" title="Download" download
+                                    aria-label="Download Classic Journal Doc">
+                                    <svg class="pc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path d="M12 3v12" />
+                                        <path d="M12 15l-4-4" />
+                                        <path d="M12 15l4-4" />
+                                        <line x1="5" y1="21" x2="19" y2="21" />
+                                    </svg>
+                                </a>
+                                <!-- Add to Cart -->
+                                <a href="#" class="pc-btn" aria-label="Add Classic Journal to Cart">
+                                    <span>Add to Cart</span>
+                                    <svg class="pc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <circle cx="9" cy="21" r="1" />
+                                        <circle cx="20" cy="21" r="1" />
+                                        <path d="M1 1h4l2.68 13.39a2 2 0 001.98 1.61h9.72a2 2 0 001.98-1.61L23 6H6" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Ratings and Stock -->
+                        <div class="pc-meta">
+                            <div class="pc-rating">
+                                <!-- Stars -->
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 
+                                            5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 
+                                            5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 
+                                            5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <span class="pc-rcount">89 Reviews</span>
+                            </div>
+                            <div class="pc-stock">Only 8 Left</div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <!-- Product 5 -->
+            <div class="col-md-4 col-sm-6 col-12 mb-4">
+                <article class="pc-card">
+                    <!-- Badge -->
+                    <div class="pc-badge">Best Seller</div>
+                    <!-- Product Image -->
+                    <div class="pc-img">
+                        <img src="./Assets/images/Classic-Journals/classis-product(5).jpg"
+                            alt="Classic Journal with Softcover">
+                    </div>
+                    <!-- Product Info -->
+                    <div class="pc-info">
+                        <div class="pc-cat">Journal</div>
+                        <h2 class="pc-title">Classic Journal - Softcover</h2>
+                        <p class="pc-desc"> Lightweight, flexible cover – easy to carry anywhere. Ideal for travel,
+                            notes, and daily journaling.
+                        </p>
+                        <!-- Features -->
+                        <div class="pc-feats">
+                            <span class="pc-feat">Softcover</span>
+                            <span class="pc-feat">Flexible</span>
+                            <span class="pc-feat">Lightweight</span>
+                        </div>
+                        <!-- Price and Actions -->
+                        <div class="pc-bottom">
+                            <div class="pc-price">
+                                <span class="pc-old">$12.99</span>
+                                <span class="pc-new">$9.99</span>
+                            </div>
+                            <div class="pc-actions">
+                                <!-- Download Button -->
+                                <a href="./Assets/docs/Classic Journals/Classic Journal - Softcover.docx"
+                                    class="pc-btn small-btn" title="Download" download
+                                    aria-label="Download Classic Journal Doc">
+                                    <svg class="pc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path d="M12 3v12" />
+                                        <path d="M12 15l-4-4" />
+                                        <path d="M12 15l4-4" />
+                                        <line x1="5" y1="21" x2="19" y2="21" />
+                                    </svg>
+                                </a>
+                                <!-- Add to Cart -->
+                                <a href="#" class="pc-btn" aria-label="Add Classic Journal to Cart">
+                                    <span>Add to Cart</span>
+                                    <svg class="pc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <circle cx="9" cy="21" r="1" />
+                                        <circle cx="20" cy="21" r="1" />
+                                        <path d="M1 1h4l2.68 13.39a2 2 0 001.98 1.61h9.72a2 2 0 001.98-1.61L23 6H6" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Ratings and Stock -->
+                        <div class="pc-meta">
+                            <div class="pc-rating">
+                                <!-- Stars -->
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 
+                                            5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 
+                                            5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 
+                                            5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 
+                                            5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <span class="pc-rcount">115 Reviews</span>
+                            </div>
+                            <div class="pc-stock">In Stock</div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <!-- Product 6 -->
+            <div class="col-md-4 col-sm-6 col-12 mb-4">
+                <article class="pc-card">
+                    <!-- Badge -->
+                    <div class="pc-badge-new">New Arrival</div>
+                    <!-- Product Image -->
+                    <div class="pc-img">
+                        <img src="./Assets/images/Classic-Journals/classis-product(6).png"
+                            alt="Classic Journal with Vintage Retro Cover">
+                    </div>
+                    <!-- Product Info -->
+                    <div class="pc-info">
+                        <div class="pc-cat">Journal</div>
+                        <h2 class="pc-title">Classic Journal - Vintage</h2>
+                        <p class="pc-desc"> Old-school charm with retro covers for a nostalgic touch. Perfect for
+                            journaling and gift purposes.
+                        </p>
+                        <!-- Features -->
+                        <div class="pc-feats">
+                            <span class="pc-feat">Vintage Cover</span>
+                            <span class="pc-feat">Retro Design</span>
+                            <span class="pc-feat">Premium Paper</span>
+                        </div>
+                        <!-- Price and Actions -->
+                        <div class="pc-bottom">
+                            <div class="pc-price">
+                                <span class="pc-old">$19.99</span>
+                                <span class="pc-new">$16.99</span>
+                            </div>
+                            <div class="pc-actions">
+                                <!-- Download Button -->
+                                <a href="./Assets/docs/Classic Journals/Classic Journal - Vintage.docx"
+                                    class="pc-btn small-btn" title="Download" download
+                                    aria-label="Download Classic Journal Doc">
+                                    <svg class="pc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path d="M12 3v12" />
+                                        <path d="M12 15l-4-4" />
+                                        <path d="M12 15l4-4" />
+                                        <line x1="5" y1="21" x2="19" y2="21" />
+                                    </svg>
+                                </a>
+                                <!-- Add to Cart -->
+                                <a href="#" class="pc-btn" aria-label="Add Classic Journal to Cart">
+                                    <span>Add to Cart</span>
+                                    <svg class="pc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <circle cx="9" cy="21" r="1" />
+                                        <circle cx="20" cy="21" r="1" />
+                                        <path d="M1 1h4l2.68 13.39a2 2 0 001.98 1.61h9.72a2 2 0 001.98-1.61L23 6H6" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Ratings and Stock -->
+                        <div class="pc-meta">
+                            <div class="pc-rating">
+                                <!-- Use loop or JS for dynamic stars -->
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 
+                                            5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 
+                                            5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 
+                                            5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <span class="pc-rcount">105 Reviews</span>
+                            </div>
+                            <div class="pc-stock">In Stock</div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+    <!-- Classic Journals Products End -->
+    <div class="container mt-0 mb-0">
+        <div style="border-top: 2px solid #E3B505; width: 100%; margin: 2px;"></div>
+        <div style="border-top: 1px solid #2E2E2E; width: 100%; margin: 2px;"></div>
+    </div>
+    <!-- Leather Journals Products Start -->
+    <section id="leather-products" class="container my-5">
+        <h2 class="text-center fw-bold mb-4">Leather Journals</h2>
+        <div class="row">
+            <!-- Product 1 -->
+            <div class="col-md-4 col-sm-6 col-12 mb-4">
+                <article class="pc-card">
+                    <!-- Badge -->
+                    <div class="pc-badge-new">New Arrival</div>
+                    <!-- Product Image -->
+                    <div class="pc-img">
+                        <img src="./Assets/images/Leather-Journals/leather-product(1).jpg"
+                            alt="Leather Journal - Deluxe">
+                    </div>
+                    <!-- Product Info -->
+                    <div class="pc-info">
+                        <div class="pc-cat">Journal</div>
+                        <h2 class="pc-title">Leather Journal - Deluxe</h2>
+                        <p class="pc-desc"> Soft premium leather with gold-embossed edges for a luxurious touch. </p>
+                        <!-- Features -->
+                        <div class="pc-feats">
+                            <span class="pc-feat">Premium Leather</span>
+                            <span class="pc-feat">Gold-Embossed Edges</span>
+                            <span class="pc-feat">Soft Cover</span>
+                        </div>
+                        <!-- Price and Actions -->
+                        <div class="pc-bottom">
+                            <div class="pc-price">
+                                <span class="pc-old">$39.99</span>
+                                <span class="pc-new">$34.99</span>
+                            </div>
+                            <div class="pc-actions">
+                                <!-- Download Button -->
+                                <a href="./Assets/docs/Leather Journals/Leather Journal - Deluxe.docx"
+                                    class="pc-btn small-btn" title="Download" download
+                                    aria-label="Download Leather Journal Details">
+                                    <svg class="pc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path d="M12 3v12" />
+                                        <path d="M12 15l-4-4" />
+                                        <path d="M12 15l4-4" />
+                                        <line x1="5" y1="21" x2="19" y2="21" />
+                                    </svg>
+                                </a>
+                                <!-- Add to Cart -->
+                                <a href="#" class="pc-btn" aria-label="Add Leather Journal to Cart">
+                                    <span>Add to Cart</span>
+                                    <svg class="pc-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2">
+                                        <circle cx="9" cy="21" r="1" />
+                                        <circle cx="20" cy="21" r="1" />
+                                        <path d="M1 1h4l2.68 13.39a2 2 0 001.98 1.61h9.72a2 2 0 001.98-1.61L23 6H6" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Ratings and Stock -->
+                        <div class="pc-meta">
+                            <div class="pc-rating">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 
+                                            5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 
+                                            5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 
+                                            5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 
+                                            5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <span class="pc-rcount">125 Reviews</span>
+                            </div>
+                            <div class="pc-stock">In Stock</div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <!-- Product 2 -->
+            <div class="col-md-4 col-sm-6 col-12 mb-4">
+                <article class="pc-card">
+                    <!-- Badge -->
+                    <div class="pc-badge">Best Seller</div>
+                    <!-- Product Image -->
+                    <div class="pc-img">
+                        <img src="./Assets/images/Leather-Journals/leather-product(2).jpg"
+                            alt="Leather Journal - Traveler">
+                    </div>
+                    <!-- Product Info -->
+                    <div class="pc-info">
+                        <div class="pc-cat">Journal</div>
+                        <h2 class="pc-title">Leather Journal - Traveler</h2>
+                        <p class="pc-desc"> Durable leather with multiple pockets, ideal for journaling on the go. </p>
+                        <!-- Features -->
+                        <div class="pc-feats">
+                            <span class="pc-feat">Durable Leather</span>
+                            <span class="pc-feat">Multiple Pockets</span>
+                            <span class="pc-feat">Portable</span>
+                        </div>
+                        <!-- Price and Actions -->
+                        <div class="pc-bottom">
+                            <div class="pc-price">
+                                <span class="pc-old">$32.99</span>
+                                <span class="pc-new">$27.99</span>
+                            </div>
+                            <div class="pc-actions">
+                                <!-- Download Button -->
+                                <a href="./Assets/docs/Leather Journals/Leather Journal - Traveler.docx"
+                                    class="pc-btn small-btn" title="Download" download
+                                    aria-label="Download Leather Journal Details">
+                                    <svg class="pc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path d="M12 3v12" />
+                                        <path d="M12 15l-4-4" />
+                                        <path d="M12 15l4-4" />
+                                        <line x1="5" y1="21" x2="19" y2="21" />
+                                    </svg>
+                                </a>
+                                <!-- Add to Cart -->
+                                <a href="#" class="pc-btn" aria-label="Add Leather Journal to Cart">
+                                    <span>Add to Cart</span>
+                                    <svg class="pc-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2">
+                                        <circle cx="9" cy="21" r="1" />
+                                        <circle cx="20" cy="21" r="1" />
+                                        <path d="M1 1h4l2.68 13.39a2 2 0 001.98 1.61h9.72a2 2 0 001.98-1.61L23 6H6" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Ratings and Stock -->
+                        <div class="pc-meta">
+                            <div class="pc-rating">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 
+                                            5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 
+                                            5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 
+                                            5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 
+                                            5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 
+                                            5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <span class="pc-rcount">143 Reviews</span>
+                            </div>
+                            <div class="pc-stock">In Stock</div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <!-- Product 3 -->
+            <div class="col-md-4 col-sm-6 col-12 mb-4">
+                <article class="pc-card">
+                    <!-- Badge -->
+                    <div class="pc-badge-low">Low Stock</div>
+                    <!-- Product Image -->
+                    <div class="pc-img">
+                        <img src="./Assets/images/Leather-Journals/leather-product(3).jpg"
+                            alt="Leather Journal - Executive">
+                    </div>
+                    <!-- Product Info -->
+                    <div class="pc-info">
+                        <div class="pc-cat">Journal</div>
+                        <h2 class="pc-title">Leather Journal - Executive</h2>
+                        <p class="pc-desc"> Sleek leather journal with lined pages for professional meetings and notes.
+                        </p>
+                        <!-- Features -->
+                        <div class="pc-feats">
+                            <span class="pc-feat">Sleek Leather</span>
+                            <span class="pc-feat">Lined Pages</span>
+                            <span class="pc-feat">Professional</span>
+                        </div>
+                        <!-- Price and Actions -->
+                        <div class="pc-bottom">
+                            <div class="pc-price">
+                                <span class="pc-old">$44.99</span>
+                                <span class="pc-new">$39.99</span>
+                            </div>
+                            <div class="pc-actions">
+                                <!-- Download Button -->
+                                <a href="./Assets/docs/Leather Journals/Leather Journal - Executive.docx"
+                                    class="pc-btn small-btn" title="Download" download
+                                    aria-label="Download Leather Journal Details">
+                                    <svg class="pc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path d="M12 3v12" />
+                                        <path d="M12 15l-4-4" />
+                                        <path d="M12 15l4-4" />
+                                        <line x1="5" y1="21" x2="19" y2="21" />
+                                    </svg>
+                                </a>
+                                <!-- Add to Cart -->
+                                <a href="#" class="pc-btn" aria-label="Add Leather Journal to Cart">
+                                    <span>Add to Cart</span>
+                                    <svg class="pc-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2">
+                                        <circle cx="9" cy="21" r="1" />
+                                        <circle cx="20" cy="21" r="1" />
+                                        <path d="M1 1h4l2.68 13.39a2 2 0 001.98 1.61h9.72a2 2 0 001.98-1.61L23 6H6" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Ratings and Stock -->
+                        <div class="pc-meta">
+                            <div class="pc-rating">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 
+                                            5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 
+                                            5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 
+                                            5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <span class="pc-rcount">130 Reviews</span>
+                            </div>
+                            <div class="pc-stock">Only 10 Left</div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <!-- Product 4 -->
+            <div class="col-md-4 col-sm-6 col-12 mb-4">
+                <article class="pc-card">
+                    <!-- Badge -->
+                    <div class="pc-badge-new">New Arrival</div>
+                    <!-- Product Image -->
+                    <div class="pc-img">
+                        <img src="./Assets/images/Leather-Journals/leather-product(4).jpg"
+                            alt="Leather Journal - Vintage">
+                    </div>
+                    <!-- Product Info -->
+                    <div class="pc-info">
+                        <div class="pc-cat">Journal</div>
+                        <h2 class="pc-title">Leather Journal - Vintage</h2>
+                        <p class="pc-desc"> Retro-style leather journal with classic charm and textured cover. </p>
+                        <!-- Features -->
+                        <div class="pc-feats">
+                            <span class="pc-feat">Retro Leather</span>
+                            <span class="pc-feat">Textured Cover</span>
+                            <span class="pc-feat">Classic Charm</span>
+                        </div>
+                        <!-- Price and Actions -->
+                        <div class="pc-bottom">
+                            <div class="pc-price">
+                                <span class="pc-old">$37.99</span>
+                                <span class="pc-new">$32.99</span>
+                            </div>
+                            <div class="pc-actions">
+                                <!-- Download Button -->
+                                <a href="./Assets/docs/Leather Journals/Leather Journal - Vintage.docx"
+                                    class="pc-btn small-btn" title="Download" download
+                                    aria-label="Download Leather Journal Details">
+                                    <svg class="pc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path d="M12 3v12" />
+                                        <path d="M12 15l-4-4" />
+                                        <path d="M12 15l4-4" />
+                                        <line x1="5" y1="21" x2="19" y2="21" />
+                                    </svg>
+                                </a>
+                                <!-- Add to Cart -->
+                                <a href="#" class="pc-btn" aria-label="Add Leather Journal to Cart">
+                                    <span>Add to Cart</span>
+                                    <svg class="pc-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2">
+                                        <circle cx="9" cy="21" r="1" />
+                                        <circle cx="20" cy="21" r="1" />
+                                        <path d="M1 1h4l2.68 13.39a2 2 0 001.98 1.61h9.72a2 2 0 001.98-1.61L23 6H6" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Ratings and Stock -->
+                        <div class="pc-meta">
+                            <div class="pc-rating">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 
+                                            5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 
+                                            5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 
+                                            5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 
+                                            5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <span class="pc-rcount">110 Reviews</span>
+                            </div>
+                            <div class="pc-stock">In Stock</div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <!-- Product 5 -->
+            <div class="col-md-4 col-sm-6 col-12 mb-4">
+                <article class="pc-card">
+                    <!-- Badge -->
+                    <div class="pc-badge">Best Seller</div>
+                    <!-- Product Image -->
+                    <div class="pc-img">
+                        <img src="./Assets/images/Leather-Journals/leather-product(5).jpg"
+                            alt="Leather Journal - Artisan">
+                    </div>
+                    <!-- Product Info -->
+                    <div class="pc-info">
+                        <div class="pc-cat">Journal</div>
+                        <h2 class="pc-title">Leather Journal - Artisan</h2>
+                        <p class="pc-desc"> Handcrafted leather with unique details for personal journaling. </p>
+                        <!-- Features -->
+                        <div class="pc-feats">
+                            <span class="pc-feat">Handcrafted Leather</span>
+                            <span class="pc-feat">Unique Details</span>
+                            <span class="pc-feat">Personal Journaling</span>
+                        </div>
+                        <!-- Price and Actions -->
+                        <div class="pc-bottom">
+                            <div class="pc-price">
+                                <span class="pc-old">$34.99</span>
+                                <span class="pc-new">$29.99</span>
+                            </div>
+                            <div class="pc-actions">
+                                <!-- Download Button -->
+                                <a href="./Assets/docs/Leather Journals/Leather Journal - Artisan.docx"
+                                    class="pc-btn small-btn" title="Download" download
+                                    aria-label="Download Leather Journal Details">
+                                    <svg class="pc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path d="M12 3v12" />
+                                        <path d="M12 15l-4-4" />
+                                        <path d="M12 15l4-4" />
+                                        <line x1="5" y1="21" x2="19" y2="21" />
+                                    </svg>
+                                </a>
+                                <!-- Add to Cart -->
+                                <a href="#" class="pc-btn" aria-label="Add Leather Journal to Cart">
+                                    <span>Add to Cart</span>
+                                    <svg class="pc-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2">
+                                        <circle cx="9" cy="21" r="1" />
+                                        <circle cx="20" cy="21" r="1" />
+                                        <path d="M1 1h4l2.68 13.39a2 2 0 001.98 1.61h9.72a2 2 0 001.98-1.61L23 6H6" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Ratings and Stock -->
+                        <div class="pc-meta">
+                            <div class="pc-rating">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 
+                                            5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 
+                                            5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 
+                                            5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 
+                                            5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 
+                                            5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <span class="pc-rcount">139 Reviews</span>
+                            </div>
+                            <div class="pc-stock">In Stock</div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <!-- Product 6 -->
+            <div class="col-md-4 col-sm-6 col-12 mb-4">
+                <article class="pc-card">
+                    <!-- Badge -->
+                    <div class="pc-badge-low">Low Stock</div>
+                    <!-- Product Image -->
+                    <div class="pc-img">
+                        <img src="./Assets/images/Leather-Journals/leather-product(6).jpg"
+                            alt="Leather Journal - Signature">
+                    </div>
+                    <!-- Product Info -->
+                    <div class="pc-info">
+                        <div class="pc-cat">Journal</div>
+                        <h2 class="pc-title">Leather Journal - Signature</h2>
+                        <p class="pc-desc">Premium leather journal with embossed signature for collectors.</p>
+                        <!-- Features -->
+                        <div class="pc-feats">
+                            <span class="pc-feat">Premium Leather</span>
+                            <span class="pc-feat">Embossed Signature</span>
+                            <span class="pc-feat">Collector's Item</span>
+                        </div>
+                        <!-- Price and Actions -->
+                        <div class="pc-bottom">
+                            <div class="pc-price">
+                                <span class="pc-old">$49.99</span>
+                                <span class="pc-new">$44.99</span>
+                            </div>
+                            <div class="pc-actions">
+                                <!-- Download Button -->
+                                <a href="./Assets/docs/Leather Journals/Leather Journal - Signature.docx"
+                                    class="pc-btn small-btn" title="Download" download
+                                    aria-label="Download Leather Journal Details">
+                                    <svg class="pc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path d="M12 3v12" />
+                                        <path d="M12 15l-4-4" />
+                                        <path d="M12 15l4-4" />
+                                        <line x1="5" y1="21" x2="19" y2="21" />
+                                    </svg>
+                                </a>
+                                <!-- Add to Cart -->
+                                <a href="#" class="pc-btn" aria-label="Add Leather Journal to Cart">
+                                    <span>Add to Cart</span>
+                                    <svg class="pc-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2">
+                                        <circle cx="9" cy="21" r="1" />
+                                        <circle cx="20" cy="21" r="1" />
+                                        <path d="M1 1h4l2.68 13.39a2 2 0 001.98 1.61h9.72a2 2 0 001.98-1.61L23 6H6" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Ratings and Stock -->
+                        <div class="pc-meta">
+                            <div class="pc-rating">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <span class="pc-rcount">110 Reviews</span>
+                            </div>
+                            <div class="pc-stock">Only 13 Left</div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+    <!-- Leather Journals Products End -->
+    <div class="container mt-0 mb-0">
+        <div style="border-top: 2px solid #E3B505; width: 100%; margin: 2px;"></div>
+        <div style="border-top: 1px solid #2E2E2E; width: 100%; margin: 2px;"></div>
+    </div>
+    <!-- Travel Journals Products Start -->
+    <section id="travel-products" class="container my-5">
+        <h2 class="text-center fw-bold mb-4">Travel Journals</h2>
+        <div class="row">
+            <!-- Product 1 -->
+            <div class="col-md-4 col-sm-6 col-12 mb-4">
+                <article class="pc-card">
+                    <!-- Badge -->
+                    <div class="pc-badge-new">New Arrival</div>
+                    <!-- Product Image -->
+                    <div class="pc-img">
+                        <img src="./Assets/images/Travel-Journals/travel-product(1).jpg"
+                            alt="Travel Journal - Explorer">
+                    </div>
+                    <!-- Product Info -->
+                    <div class="pc-info">
+                        <div class="pc-cat">Journal</div>
+                        <h2 class="pc-title">Travel Journal - Explorer</h2>
+                        <p class="pc-desc"> Compact journal with waterproof pages, perfect for outdoor adventures. </p>
+                        <!-- Features -->
+                        <div class="pc-feats">
+                            <span class="pc-feat">Waterproof Pages</span>
+                            <span class="pc-feat">Compact Size</span>
+                            <span class="pc-feat">Durable Cover</span>
+                        </div>
+                        <!-- Price and Actions -->
+                        <div class="pc-bottom">
+                            <div class="pc-price">
+                                <span class="pc-old">$27.99</span>
+                                <span class="pc-new">$22.99</span>
+                            </div>
+                            <div class="pc-actions">
+                                <!-- Download Button -->
+                                <a href="./Assets/docs/Travel Journals/Travel Journal - Explorer.docx"
+                                    class="pc-btn small-btn" title="Download" download
+                                    aria-label="Download Travel Journal Details">
+                                    <svg class="pc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path d="M12 3v12" />
+                                        <path d="M12 15l-4-4" />
+                                        <path d="M12 15l4-4" />
+                                        <line x1="5" y1="21" x2="19" y2="21" />
+                                    </svg>
+                                </a>
+                                <!-- Add to Cart -->
+                                <a href="#" class="pc-btn" aria-label="Add Travel Journal to Cart">
+                                    <span>Add to Cart</span>
+                                    <svg class="pc-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2">
+                                        <circle cx="9" cy="21" r="1" />
+                                        <circle cx="20" cy="21" r="1" />
+                                        <path d="M1 1h4l2.68 13.39a2 2 0 001.98 1.61h9.72a2 2 0 001.98-1.61L23 6H6" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Ratings and Stock -->
+                        <div class="pc-meta">
+                            <div class="pc-rating">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 
+                                            5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 
+                                            5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 
+                                            5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <span class="pc-rcount">98 Reviews</span>
+                            </div>
+                            <div class="pc-stock">In Stock</div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <!-- Product 2 -->
+            <div class="col-md-4 col-sm-6 col-12 mb-4">
+                <article class="pc-card">
+                    <!-- Badge -->
+                    <div class="pc-badge-new">New Arrival</div>
+                    <!-- Product Image -->
+                    <div class="pc-img">
+                        <img src="./Assets/images/Travel-Journals/travel-product(2).jpg" alt="Travel Journal - Nomad">
+                    </div>
+                    <!-- Product Info -->
+                    <div class="pc-info">
+                        <div class="pc-cat">Journal</div>
+                        <h2 class="pc-title">Travel Journal - Nomad</h2>
+                        <p class="pc-desc"> Durable cover with elastic strap and travel-themed map pages. </p>
+                        <!-- Features -->
+                        <div class="pc-feats">
+                            <span class="pc-feat">Elastic Strap</span>
+                            <span class="pc-feat">Map Pages</span>
+                            <span class="pc-feat">Durable Cover</span>
+                        </div>
+                        <!-- Price and Actions -->
+                        <div class="pc-bottom">
+                            <div class="pc-price">
+                                <span class="pc-old">$24.99</span>
+                                <span class="pc-new">$19.99</span>
+                            </div>
+                            <div class="pc-actions">
+                                <!-- Download Button -->
+                                <a href="./Assets/docs/Travel Journals/Travel Journal - Nomad.docx"
+                                    class="pc-btn small-btn" title="Download" download
+                                    aria-label="Download Travel Journal Details">
+                                    <svg class="pc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path d="M12 3v12" />
+                                        <path d="M12 15l-4-4" />
+                                        <path d="M12 15l4-4" />
+                                        <line x1="5" y1="21" x2="19" y2="21" />
+                                    </svg>
+                                </a>
+                                <!-- Add to Cart -->
+                                <a href="#" class="pc-btn" aria-label="Add Travel Journal to Cart">
+                                    <span>Add to Cart</span>
+                                    <svg class="pc-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2">
+                                        <circle cx="9" cy="21" r="1" />
+                                        <circle cx="20" cy="21" r="1" />
+                                        <path d="M1 1h4l2.68 13.39a2 2 0 001.98 1.61h9.72a2 2 0 001.98-1.61L23 6H6" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Ratings and Stock -->
+                        <div class="pc-meta">
+                            <div class="pc-rating">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 
+                                            5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 
+                                            5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 
+                                            5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <span class="pc-rcount">89 Reviews</span>
+                            </div>
+                            <div class="pc-stock">In Stock</div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <!-- Product 3 -->
+            <div class="col-md-4 col-sm-6 col-12 mb-4">
+                <article class="pc-card">
+                    <!-- Badge -->
+                    <div class="pc-badge">Best Seller</div>
+                    <!-- Product Image -->
+                    <div class="pc-img">
+                        <img src="./Assets/images/Travel-Journals/travel-product(3).jpg"
+                            alt="Travel Journal - Adventure">
+                    </div>
+                    <!-- Product Info -->
+                    <div class="pc-info">
+                        <div class="pc-cat">Journal</div>
+                        <h2 class="pc-title">Travel Journal - Adventure</h2>
+                        <p class="pc-desc"> Rugged journal with reinforced binding for hiking and trekking. </p>
+                        <!-- Features -->
+                        <div class="pc-feats">
+                            <span class="pc-feat">Reinforced Binding</span>
+                            <span class="pc-feat">Durable Cover</span>
+                            <span class="pc-feat">Outdoor Ready</span>
+                        </div>
+                        <!-- Price and Actions -->
+                        <div class="pc-bottom">
+                            <div class="pc-price">
+                                <span class="pc-old">$29.99</span>
+                                <span class="pc-new">$24.99</span>
+                            </div>
+                            <div class="pc-actions">
+                                <!-- Download Button -->
+                                <a href="./Assets/docs/Travel Journals/Travel Journal - Adventure.docx"
+                                    class="pc-btn small-btn" title="Download" download
+                                    aria-label="Download Travel Journal Details">
+                                    <svg class="pc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path d="M12 3v12" />
+                                        <path d="M12 15l-4-4" />
+                                        <path d="M12 15l4-4" />
+                                        <line x1="5" y1="21" x2="19" y2="21" />
+                                    </svg>
+                                </a>
+                                <!-- Add to Cart -->
+                                <a href="#" class="pc-btn" aria-label="Add Travel Journal to Cart">
+                                    <span>Add to Cart</span>
+                                    <svg class="pc-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2">
+                                        <circle cx="9" cy="21" r="1" />
+                                        <circle cx="20" cy="21" r="1" />
+                                        <path d="M1 1h4l2.68 13.39a2 2 0 001.98 1.61h9.72a2 2 0 001.98-1.61L23 6H6" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Ratings and Stock -->
+                        <div class="pc-meta">
+                            <div class="pc-rating">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 
+                                            5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 
+                                            5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 
+                                            5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 
+                                            5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 
+                                            5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <span class="pc-rcount">139 Reviews</span>
+                            </div>
+                            <div class="pc-stock">In Stock</div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <!-- Product 4 -->
+            <div class="col-md-4 col-sm-6 col-12 mb-4">
+                <article class="pc-card">
+                    <!-- Badge -->
+                    <div class="pc-badge-low">Low Stock</div>
+                    <!-- Product Image -->
+                    <div class="pc-img">
+                        <img src="./Assets/images/Travel-Journals/travel-product(4).jpg"
+                            alt="Travel Journal - Wanderer">
+                    </div>
+                    <!-- Product Info -->
+                    <div class="pc-info">
+                        <div class="pc-cat">Journal</div>
+                        <h2 class="pc-title">Travel Journal - Wanderer</h2>
+                        <p class="pc-desc"> Lightweight travel journal with inspirational quotes on each page. </p>
+                        <!-- Features -->
+                        <div class="pc-feats">
+                            <span class="pc-feat">Lightweight</span>
+                            <span class="pc-feat">Inspirational Quotes</span>
+                            <span class="pc-feat">Portable Size</span>
+                        </div>
+                        <!-- Price and Actions -->
+                        <div class="pc-bottom">
+                            <div class="pc-price">
+                                <span class="pc-old">$26.99</span>
+                                <span class="pc-new">$21.99</span>
+                            </div>
+                            <div class="pc-actions">
+                                <!-- Download Button -->
+                                <a href="./Assets/docs/Travel Journals/Travel Journal - Wanderer.docx"
+                                    class="pc-btn small-btn" title="Download" download
+                                    aria-label="Download Travel Journal Details">
+                                    <svg class="pc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path d="M12 3v12" />
+                                        <path d="M12 15l-4-4" />
+                                        <path d="M12 15l4-4" />
+                                        <line x1="5" y1="21" x2="19" y2="21" />
+                                    </svg>
+                                </a>
+                                <!-- Add to Cart -->
+                                <a href="#" class="pc-btn" aria-label="Add Travel Journal to Cart">
+                                    <span>Add to Cart</span>
+                                    <svg class="pc-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2">
+                                        <circle cx="9" cy="21" r="1" />
+                                        <circle cx="20" cy="21" r="1" />
+                                        <path d="M1 1h4l2.68 13.39a2 2 0 001.98 1.61h9.72a2 2 0 001.98-1.61L23 6H6" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Ratings and Stock -->
+                        <div class="pc-meta">
+                            <div class="pc-rating">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 
+                                            5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 
+                                            5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 
+                                            5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 
+                                            5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <span class="pc-rcount">115 Reviews</span>
+                            </div>
+                            <div class="pc-stock">Only 7 Left</div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <!-- Product 5 -->
+            <div class="col-md-4 col-sm-6 col-12 mb-4">
+                <article class="pc-card">
+                    <!-- Badge -->
+                    <div class="pc-badge-new">New Arrival</div>
+                    <!-- Product Image -->
+                    <div class="pc-img">
+                        <img src="./Assets/images/Travel-Journals/travel-product(5).jpg"
+                            alt="Travel Journal - Globe Trotter">
+                    </div>
+                    <!-- Product Info -->
+                    <div class="pc-info">
+                        <div class="pc-cat">Journal</div>
+                        <h2 class="pc-title">Travel Journal - Globe Trotter</h2>
+                        <p class="pc-desc"> Journal with world map pages and stickers for documenting travels. </p>
+                        <!-- Features -->
+                        <div class="pc-feats">
+                            <span class="pc-feat">World Map Pages</span>
+                            <span class="pc-feat">Stickers Included</span>
+                            <span class="pc-feat">Portable Size</span>
+                        </div>
+                        <!-- Price and Actions -->
+                        <div class="pc-bottom">
+                            <div class="pc-price">
+                                <span class="pc-old">$31.99</span>
+                                <span class="pc-new">$26.99</span>
+                            </div>
+                            <div class="pc-actions">
+                                <!-- Download Button -->
+                                <a href="./Assets/docs/Travel Journals/Travel Journal - Globe Trotter.docx"
+                                    class="pc-btn small-btn" title="Download" download
+                                    aria-label="Download Travel Journal Details">
+                                    <svg class="pc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path d="M12 3v12" />
+                                        <path d="M12 15l-4-4" />
+                                        <path d="M12 15l4-4" />
+                                        <line x1="5" y1="21" x2="19" y2="21" />
+                                    </svg>
+                                </a>
+                                <!-- Add to Cart -->
+                                <a href="#" class="pc-btn" aria-label="Add Travel Journal to Cart">
+                                    <span>Add to Cart</span>
+                                    <svg class="pc-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2">
+                                        <circle cx="9" cy="21" r="1" />
+                                        <circle cx="20" cy="21" r="1" />
+                                        <path d="M1 1h4l2.68 13.39a2 2 0 001.98 1.61h9.72a2 2 0 001.98-1.61L23 6H6" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Ratings and Stock -->
+                        <div class="pc-meta">
+                            <div class="pc-rating">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 
+                                            5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 
+                                            5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 
+                                            5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <span class="pc-rcount">79 Reviews</span>
+                            </div>
+                            <div class="pc-stock">In Stock</div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <!-- Product 6 -->
+            <div class="col-md-4 col-sm-6 col-12 mb-4">
+                <article class="pc-card">
+                    <!-- Badge -->
+                    <div class="pc-badge">Best Seller</div>
+                    <!-- Product Image -->
+                    <div class="pc-img">
+                        <img src="./Assets/images/Travel-Journals/travel-product(6).jpg" alt="Travel Journal - Horizon">
+                    </div>
+                    <!-- Product Info -->
+                    <div class="pc-info">
+                        <div class="pc-cat">Journal</div>
+                        <h2 class="pc-title">Travel Journal - Horizon</h2>
+                        <p class="pc-desc"> Elegant journal with travel prompts and sketch sections for adventures. </p>
+                        <!-- Features -->
+                        <div class="pc-feats">
+                            <span class="pc-feat">Travel Prompts</span>
+                            <span class="pc-feat">Sketch Sections</span>
+                            <span class="pc-feat">Durable Cover</span>
+                        </div>
+                        <!-- Price and Actions -->
+                        <div class="pc-bottom">
+                            <div class="pc-price">
+                                <span class="pc-old">$32.99</span>
+                                <span class="pc-new">$28.99</span>
+                            </div>
+                            <div class="pc-actions">
+                                <!-- Download Button -->
+                                <a href="./Assets/docs/Travel Journals/Travel Journal - Horizon.docx"
+                                    class="pc-btn small-btn" title="Download" download
+                                    aria-label="Download Travel Journal Details">
+                                    <svg class="pc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path d="M12 3v12"></path>
+                                        <path d="M12 15l-4-4"></path>
+                                        <path d="M12 15l4-4"></path>
+                                        <line x1="5" y1="21" x2="19" y2="21"></line>
+                                    </svg>
+                                </a>
+                                <!-- Add to Cart -->
+                                <a href="#" class="pc-btn" aria-label="Add Travel Journal to Cart">
+                                    <span>Add to Cart</span>
+                                    <svg class="pc-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2">
+                                        <circle cx="9" cy="21" r="1"></circle>
+                                        <circle cx="20" cy="21" r="1"></circle>
+                                        <path d="M1 1h4l2.68 13.39a2 2 0 001.98 1.61h9.72a2 2 0 001.98-1.61L23 6H6">
+                                        </path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Ratings and Stock -->
+                        <div class="pc-meta">
+                            <div class="pc-rating">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 
+                                            12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                                </svg>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 
+                                            12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                                </svg>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 
+                                            12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                                </svg>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 
+                                            12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                                </svg>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 
+                                            12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                                </svg>
+                                <span class="pc-rcount">142 Reviews</span>
+                            </div>
+                            <div class="pc-stock">In Stock</div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+    <!-- Travel Journals Products End -->
+    <!-- Footer START -->
+    <footer class="footer bg-dark py-5">
+        <div class="container">
+            <div class="d-flex flex-row flex-wrap">
+                <!-- Company Info -->
+                <div class="footer-col">
+                    <h5 class="text-warning fw-bold">Ryana Calendars</h5>
+                    <p class="text-light">123 Ryana Street, Karachi, Pakistan</p>
+                    <p class="text-light">Email: <a href="mailto:info@ryanacalendars.com"
+                            class="text-warning">info@ryanacalendars.com</a>
+                    </p>
+                    <p class="text-light">Phone: <a href="tel:+921234567890" class="text-warning">+92 123 456 7890</a>
+                    </p>
+                </div>
+                <!-- Products -->
+                <div class="footer-col">
+                    <h5 class="text-warning fw-bold">Products</h5>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#" class="text-light text-decoration-none">Journals</a>
+                        </li>
+                        <li>
+                            <a href="./diaries.html" class="text-light text-decoration-none">Diaries</a>
+                        </li>
+                        <li>
+                            <a href="./calenders.html" class="text-light text-decoration-none">Calendars</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Quick Links -->
+                <div class="footer-col">
+                    <h5 class="text-warning fw-bold">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="index.html#products" class="text-light text-decoration-none">All Products</a>
+                        </li>
+                        <li>
+                            <a href="index.html#home-contact" class="text-light text-decoration-none">Contact Us</a>
+                        </li>
+                        <li>
+                            <a href="Assets/docs/PriceList.docx" class="text-light text-decoration-none" download>Price
+                                List</a>
+                        </li>
+                        <li>
+                            <a href="index.html#about-us" class="text-light text-decoration-none">About Us</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Social Media -->
+                <div class="footer-col">
+                    <h5 class="text-warning fw-bold">Follow Us</h5>
+                    <div class="social-icons d-flex gap-3">
+                        <a href="#" class="text-warning fs-4">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a href="#" class="text-warning fs-4">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        <a href="#" class="text-warning fs-4">
+                            <i class="bi bi-twitter"></i>
+                        </a>
+                        <a href="#" class="text-warning fs-4">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <hr class="border-secondary my-4">
+            <div class="text-center text-light small"> &copy; 2025 Ryana Calendars. All Rights Reserved. </div>
+        </div>
+    </footer>
+    <!-- Footer END -->
+    <!-- ===== Bootstrap JS ===== -->
+    <script src="./Assets/js/bootstrap.bundle.min.js"></script>
+    <!-- ===== JS initializer ===== -->
+    <script>
+        /* Safe init: ensures carousel cycles even if data attributes are ignored.
+             Put this after bootstrap.bundle.min.js (or at end of body). */
+        document.addEventListener('DOMContentLoaded', function () {
+            var el = document.getElementById('journalCarousel');
+            if (!el) return;
+            try {
+                // If bootstrap is loaded, initialize (or re-init) the carousel with options.
+                if (typeof bootstrap !== 'undefined' && bootstrap.Carousel) {
+                    // Create / re-create carousel with desired options
+                    var carousel = bootstrap.Carousel.getInstance(el) || new bootstrap.Carousel(el, {
+                        interval: 4000, // 4 seconds
+                        pause: 'hover',
+                        ride: 'carousel',
+                        touch: true
+                    });
+                    carousel.cycle(); // ensure it starts
+                } else {
+                    console.warn('Bootstrap JS not found. Carousel will not work until bootstrap.bundle.min.js is loaded.');
+                }
+            } catch (err) {
+                console.error('Carousel init error:', err);
+            }
+        });
+    </script>
+    <!-- Simple "Add to Cart" feedback -->
+    <script>
+        document.querySelectorAll('.add-to-cart-btn, .pc-btn[aria-label^="Add"]').forEach(btn => {
+            btn.addEventListener('click', e => {
+                e.preventDefault(); // stop page jump
+                const productName =
+                    btn.dataset.product ||
+                    btn.getAttribute('aria-label')?.replace('Add ', '').replace(' to Cart', '') ||
+                    'Product';
+
+                // Show a friendly alert message
+                alert(`${productName} added to cart!`);
+            });
+        });
+    </script>
+
+</body>
+
+</html>

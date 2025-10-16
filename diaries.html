@@ -1,0 +1,1578 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ryana Calenders-Diaries</title>
+    <link rel="stylesheet" href="./Assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./Assets/css/style.css">
+    <link rel="stylesheet" href="./Assets/css/bootstrap-icons.css">
+</head>
+
+<body>
+    <!-- NAVBAR START -->
+    <nav class="navbar navbar-expand-lg navbarbg">
+        <div class="container-fluid">
+            <!-- Logo -->
+            <span class="navbar-brand m-0">
+                <img src="./Assets/images/logo.png" alt="Ryana Calendars" class="logo-img">
+            </span>
+            <!-- Toggler/collapsible Button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Navbar Links -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link navitem" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle navitem" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">Products</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./journals.html">Journals</a></li>
+                            <li><a class="dropdown-item" href="./calenders.html">Calenders</a></li>
+                            <li><a class="dropdown-item" href="#">Diaries</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link navitem" href="./contact.html#map-section">Location</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link navitem" href="./contact.html#price-list-section">Price List</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link navitem" href="./contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- NAVBAR END -->
+    <!-- ===== Diaries Hero Carousel Start ===== -->
+    <div id="diaryCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000"
+        aria-label="Diaries Carousel">
+        <!-- Indicators / Dots -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#diaryCarousel" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#diaryCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#diaryCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <!-- Slides -->
+        <div class="carousel-inner">
+            <!-- Slide 1: Classic Diaries -->
+            <div class="carousel-item active">
+                <div class="hero-slide" style="background-image: url('./Assets/images/diaries-classic.jpg');">
+                    <div class="overlay" aria-hidden="true"></div>
+                    <div class="carousel-caption d-flex flex-column justify-content-center align-items-center h-100">
+                        <h1 class="fw-bold display-4">Classic Diaries</h1>
+                        <p class="lead">Elegant diaries for everyday use and personal journaling.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Slide 2: Leather Diaries -->
+            <div class="carousel-item">
+                <div class="hero-slide" style="background-image: url('./Assets/images/diaries-leather.jpg');">
+                    <div class="overlay" aria-hidden="true"></div>
+                    <div class="carousel-caption d-flex flex-column justify-content-center align-items-center h-100">
+                        <h1 class="fw-bold display-4">Leather Diaries</h1>
+                        <p class="lead">Premium handcrafted diaries with luxurious leather covers.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Slide 3: Pocket Diaries -->
+            <div class="carousel-item">
+                <div class="hero-slide" style="background-image: url('./Assets/images/diaries-pocket.jpg');">
+                    <div class="overlay" aria-hidden="true"></div>
+                    <div class="carousel-caption d-flex flex-column justify-content-center align-items-center h-100">
+                        <h1 class="fw-bold display-4">Pocket Diaries</h1>
+                        <p class="lead">Compact and portable diaries for notes on the go.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#diaryCarousel" data-bs-slide="prev">
+            <span class="diary-carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#diaryCarousel" data-bs-slide="next">
+            <span class="diary-carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- ===== Diaries Hero Carousel End ===== -->
+    <!-- ===== Diaries Categories Start ===== -->
+    <section class="container my-5">
+        <h2 class="text-center fw-bold mb-4">Diary Categories</h2>
+        <div class="row text-center">
+            <!-- Classic Diaries -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow-sm category-card">
+                    <img src="./Assets/images/diaries-classic.jpg" class="card-img-top" alt="Classic Diary">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Classic Diaries</h5>
+                        <p class="card-text">Elegant diaries for everyday writing and personal journaling.</p>
+                        <a href="#classic-diaries" class="btn btn-warning">Explore</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Leather Diaries -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow-sm category-card">
+                    <img src="./Assets/images/diaries-leather.jpg" class="card-img-top" alt="Leather Diary">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Leather Diaries</h5>
+                        <p class="card-text">Premium leather-bound diaries for a luxurious touch.</p>
+                        <a href="#leather-diaries" class="btn btn-warning">Explore</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Pocket Diaries -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow-sm category-card">
+                    <img src="./Assets/images/diaries-pocket.jpg" class="card-img-top" alt="Pocket Diary">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Pocket Diaries</h5>
+                        <p class="card-text">Compact and portable diaries for notes on the go.</p>
+                        <a href="#pocket-diaries" class="btn btn-warning">Explore</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ===== Diaries Categories End ===== -->
+    <div class="container mt-0 mb-0">
+        <div style="border-top: 2px solid #E3B505; width: 100%; margin: 2px;"></div>
+        <div style="border-top: 1px solid #2E2E2E; width: 100%; margin: 2px;"></div>
+    </div>
+    <!-- ===== Classic Diaries Products Start ===== -->
+    <section id="classic-diaries" class="container my-5">
+        <h2 class="text-center fw-bold mb-4">Classic Diaries</h2>
+        <div class="row">
+            <!-- Product 1 -->
+            <div class="col-md-4 col-sm-6 col-12 mb-4">
+                <article class="pc-card">
+                    <!-- Badge -->
+                    <div class="pc-badge-new">New Arrival</div>
+                    <!-- Product Image -->
+                    <div class="pc-img">
+                        <img src="./Assets/images/Classic-Diaries/classic-diary(1).jpg"
+                            alt="Classic Diary - Daily Planner">
+                    </div>
+                    <!-- Product Info -->
+                    <div class="pc-info">
+                        <div class="pc-cat">Diary</div>
+                        <h2 class="pc-title">Classic Diary - Daily Planner</h2>
+                        <p class="pc-desc">Elegant diary with daily layout for notes and personal journaling.</p>
+                        <!-- Features -->
+                        <div class="pc-feats">
+                            <span class="pc-feat">Daily Layout</span>
+                            <span class="pc-feat">Premium Paper</span>
+                            <span class="pc-feat">Durable Binding</span>
+                        </div>
+                        <!-- Price and Actions -->
+                        <div class="pc-bottom">
+                            <div class="pc-price">
+                                <span class="pc-old">$17.99</span>
+                                <span class="pc-new">$14.99</span>
+                            </div>
+                            <div class="pc-actions">
+                                <a href="./Assets/docs/Classis Diaries/Classic Diary - Daily Planner.docx"
+                                    class="pc-btn small-btn" title="Download" download>
+                                    <svg class="pc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path d="M12 3v12" />
+                                        <path d="M12 15l-4-4" />
+                                        <path d="M12 15l4-4" />
+                                        <line x1="5" y1="21" x2="19" y2="21" />
+                                    </svg>
+                                </a>
+                                <a href="#" class="pc-btn" aria-label="Add Classic Diary to Cart">
+                                    <span>Add to Cart</span>
+                                    <svg class="pc-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2">
+                                        <circle cx="9" cy="21" r="1" />
+                                        <circle cx="20" cy="21" r="1" />
+                                        <path d="M1 1h4l2.68 13.39a2 2 0 001.98 1.61h9.72a2 2 0 001.98-1.61L23 6H6" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Ratings and Stock -->
+                        <div class="pc-meta">
+                            <div class="pc-rating">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 
+                                            5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 
+                                            5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 
+                                            5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <span class="pc-rcount">72 Reviews</span>
+                            </div>
+                            <div class="pc-stock">In Stock</div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <!-- Product 2 -->
+            <div class="col-md-4 col-sm-6 col-12 mb-4">
+                <article class="pc-card">
+                    <!-- Badge -->
+                    <div class="pc-badge">Best Seller</div>
+                    <!-- Product Image -->
+                    <div class="pc-img">
+                        <img src="./Assets/images/Classic-Diaries/classic-diary(2).jpg"
+                            alt="Classic Diary - Weekly Planner">
+                    </div>
+                    <!-- Product Info -->
+                    <div class="pc-info">
+                        <div class="pc-cat">Diary</div>
+                        <h2 class="pc-title">Classic Diary - Weekly Planner</h2>
+                        <p class="pc-desc">Spacious weekly planner for organized scheduling and notes.</p>
+                        <!-- Features -->
+                        <div class="pc-feats">
+                            <span class="pc-feat">Weekly Layout</span>
+                            <span class="pc-feat">Soft Cover</span>
+                            <span class="pc-feat">Premium Paper</span>
+                        </div>
+                        <!-- Price and Actions -->
+                        <div class="pc-bottom">
+                            <div class="pc-price">
+                                <span class="pc-old">$18.99</span>
+                                <span class="pc-new">$15.49</span>
+                            </div>
+                            <div class="pc-actions">
+                                <a href="./Assets/docs/Classis Diaries/Classic Diary - Weekly  Planner.docx"
+                                    class="pc-btn small-btn" title="Download" download>
+                                    <svg class="pc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path d="M12 3v12" />
+                                        <path d="M12 15l-4-4" />
+                                        <path d="M12 15l4-4" />
+                                        <line x1="5" y1="21" x2="19" y2="21" />
+                                    </svg>
+                                </a>
+                                <a href="#" class="pc-btn" aria-label="Add Classic Diary to Cart">
+                                    <span>Add to Cart</span>
+                                    <svg class="pc-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2">
+                                        <circle cx="9" cy="21" r="1" />
+                                        <circle cx="20" cy="21" r="1" />
+                                        <path d="M1 1h4l2.68 13.39a2 2 0 001.98 1.61h9.72a2 2 0 001.98-1.61L23 6H6" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Ratings and Stock -->
+                        <div class="pc-meta">
+                            <div class="pc-rating">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 
+                                            5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 
+                                            5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 
+                                            5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 
+                                            5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <span class="pc-rcount">91 Reviews</span>
+                            </div>
+                            <div class="pc-stock">Few Left</div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <!-- Product 3 -->
+            <div class="col-md-4 col-sm-6 col-12 mb-4">
+                <article class="pc-card">
+                    <!-- Badge -->
+                    <div class="pc-badge-low">Low Stock</div>
+                    <!-- Product Image -->
+                    <div class="pc-img">
+                        <img src="./Assets/images/Classic-Diaries/classic-diary(3).jpg"
+                            alt="Classic Diary - Monthly Planner">
+                    </div>
+                    <!-- Product Info -->
+                    <div class="pc-info">
+                        <div class="pc-cat">Diary</div>
+                        <h2 class="pc-title">Classic Diary - Monthly Planner</h2>
+                        <p class="pc-desc">Perfect monthly diary with clear calendar layout and notes section.</p>
+                        <!-- Features -->
+                        <div class="pc-feats">
+                            <span class="pc-feat">Monthly Layout</span>
+                            <span class="pc-feat">Hard Cover</span>
+                            <span class="pc-feat">Smooth Finish</span>
+                        </div>
+                        <!-- Price and Actions -->
+                        <div class="pc-bottom">
+                            <div class="pc-price">
+                                <span class="pc-old">$16.99</span>
+                                <span class="pc-new">$14.49</span>
+                            </div>
+                            <div class="pc-actions">
+                                <a href="./Assets/docs/Classis Diaries/Classic Diary - Monthly  Planner.docx"
+                                    class="pc-btn small-btn" title="Download" download>
+                                    <svg class="pc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path d="M12 3v12" />
+                                        <path d="M12 15l-4-4" />
+                                        <path d="M12 15l4-4" />
+                                        <line x1="5" y1="21" x2="19" y2="21" />
+                                    </svg>
+                                </a>
+                                <a href="#" class="pc-btn" aria-label="Add Classic Diary to Cart">
+                                    <span>Add to Cart</span>
+                                    <svg class="pc-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2">
+                                        <circle cx="9" cy="21" r="1" />
+                                        <circle cx="20" cy="21" r="1" />
+                                        <path d="M1 1h4l2.68 13.39a2 2 0 001.98 1.61h9.72a2 2 0 001.98-1.61L23 6H6" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Ratings and Stock -->
+                        <div class="pc-meta">
+                            <div class="pc-rating">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 
+                                            5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 
+                                            5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <span class="pc-rcount">43 Reviews</span>
+                            </div>
+                            <div class="pc-stock">Out of Stock</div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <!-- Product 4 -->
+            <div class="col-md-4 col-sm-6 col-12 mb-4">
+                <article class="pc-card">
+                    <!-- Badge -->
+                    <div class="pc-badge-low">Low Stock</div>
+                    <!-- Product Image -->
+                    <div class="pc-img">
+                        <img src="./Assets/images/Classic-Diaries/classic-diary(4).jpg" alt="Classic Diary - Executive">
+                    </div>
+                    <!-- Product Info -->
+                    <div class="pc-info">
+                        <div class="pc-cat">Diary</div>
+                        <h2 class="pc-title">Classic Diary - Executive</h2>
+                        <p class="pc-desc">Premium classic diary for professionals with high-quality paper.</p>
+                        <!-- Features -->
+                        <div class="pc-feats">
+                            <span class="pc-feat">Professional Layout</span>
+                            <span class="pc-feat">Premium Paper</span>
+                            <span class="pc-feat">Hardcover Binding</span>
+                        </div>
+                        <!-- Price and Actions -->
+                        <div class="pc-bottom">
+                            <div class="pc-price">
+                                <span class="pc-old">$19.99</span>
+                                <span class="pc-new">$16.99</span>
+                            </div>
+                            <div class="pc-actions">
+                                <a href="./Assets/docs/Classis Diaries/Classic Diary - Executive.docx"
+                                    class="pc-btn small-btn" title="Download" download>
+                                    <svg class="pc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path d="M12 3v12" />
+                                        <path d="M12 15l-4-4" />
+                                        <path d="M12 15l4-4" />
+                                        <line x1="5" y1="21" x2="19" y2="21" />
+                                    </svg>
+                                </a>
+                                <a href="#" class="pc-btn" aria-label="Add Classic Diary to Cart">
+                                    <span>Add to Cart</span>
+                                    <svg class="pc-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2">
+                                        <circle cx="9" cy="21" r="1" />
+                                        <circle cx="20" cy="21" r="1" />
+                                        <path d="M1 1h4l2.68 13.39a2 2 0 001.98 1.61h9.72a2 2 0 001.98-1.61L23 6H6" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Ratings and Stock -->
+                        <div class="pc-meta">
+                            <div class="pc-rating">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <span class="pc-rcount">88 Reviews</span>
+                            </div>
+                            <div class="pc-stock">Only 5 Left</div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <!-- Product 5 -->
+            <div class="col-md-4 col-sm-6 col-12 mb-4">
+                <article class="pc-card">
+                    <!-- Badge -->
+                    <div class="pc-badge">Best Seller</div>
+                    <!-- Product Image -->
+                    <div class="pc-img">
+                        <img src="./Assets/images/Classic-Diaries/classic-diary(5).jpg" alt="Classic Diary - Hardcover">
+                    </div>
+                    <!-- Product Info -->
+                    <div class="pc-info">
+                        <div class="pc-cat">Diary</div>
+                        <h2 class="pc-title">Classic Diary - Hardcover</h2>
+                        <p class="pc-desc">Sturdy hardcover diary for long-lasting use and premium feel.</p>
+                        <!-- Features -->
+                        <div class="pc-feats">
+                            <span class="pc-feat">Hardcover</span>
+                            <span class="pc-feat">Durable Pages</span>
+                            <span class="pc-feat">Elegant Design</span>
+                        </div>
+                        <!-- Price and Actions -->
+                        <div class="pc-bottom">
+                            <div class="pc-price">
+                                <span class="pc-old">$18.99</span>
+                                <span class="pc-new">$15.99</span>
+                            </div>
+                            <div class="pc-actions">
+                                <a href="./Assets/docs/Classis Diaries/Classic Diary - Hardcover.docx"
+                                    class="pc-btn small-btn" title="Download" download>
+                                    <svg class="pc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path d="M12 3v12" />
+                                        <path d="M12 15l-4-4" />
+                                        <path d="M12 15l4-4" />
+                                        <line x1="5" y1="21" x2="19" y2="21" />
+                                    </svg>
+                                </a>
+                                <a href="#" class="pc-btn" aria-label="Add Classic Diary to Cart">
+                                    <span>Add to Cart</span>
+                                    <svg class="pc-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2">
+                                        <circle cx="9" cy="21" r="1" />
+                                        <circle cx="20" cy="21" r="1" />
+                                        <path d="M1 1h4l2.68 13.39a2 2 0 001.98 1.61h9.72a2 2 0 001.98-1.61L23 6H6" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Ratings and Stock -->
+                        <div class="pc-meta">
+                            <div class="pc-rating">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <span class="pc-rcount">94 Reviews</span>
+                            </div>
+                            <div class="pc-stock">In Stock</div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <!-- Product 6 -->
+            <div class="col-md-4 col-sm-6 col-12 mb-4">
+                <article class="pc-card">
+                    <!-- Badge -->
+                    <div class="pc-badge-new">New Arrival</div>
+                    <!-- Product Image -->
+                    <div class="pc-img">
+                        <img src="./Assets/images/Classic-Diaries/classic-diary(6).jpg"
+                            alt="Classic Diary - Pocket Edition">
+                    </div>
+                    <!-- Product Info -->
+                    <div class="pc-info">
+                        <div class="pc-cat">Diary</div>
+                        <h2 class="pc-title">Classic Diary - Pocket Edition</h2>
+                        <p class="pc-desc">Compact classic diary ideal for carrying in bags and daily use.</p>
+                        <!-- Features -->
+                        <div class="pc-feats">
+                            <span class="pc-feat">Portable Size</span>
+                            <span class="pc-feat">Durable Pages</span>
+                            <span class="pc-feat">Lightweight</span>
+                        </div>
+                        <!-- Price and Actions -->
+                        <div class="pc-bottom">
+                            <div class="pc-price">
+                                <span class="pc-old">$15.49</span>
+                                <span class="pc-new">$13.99</span>
+                            </div>
+                            <div class="pc-actions">
+                                <a href="./Assets/docs/Classis Diaries/Classic Diary - Pocket Edition.docx"
+                                    class="pc-btn small-btn" title="Download" download>
+                                    <svg class="pc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path d="M12 3v12" />
+                                        <path d="M12 15l-4-4" />
+                                        <path d="M12 15l4-4" />
+                                        <line x1="5" y1="21" x2="19" y2="21" />
+                                    </svg>
+                                </a>
+                                <a href="#" class="pc-btn" aria-label="Add Classic Diary to Cart">
+                                    <span>Add to Cart</span>
+                                    <svg class="pc-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2">
+                                        <circle cx="9" cy="21" r="1" />
+                                        <circle cx="20" cy="21" r="1" />
+                                        <path d="M1 1h4l2.68 13.39a2 2 0 001.98 1.61h9.72a2 2 0 001.98-1.61L23 6H6" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Ratings and Stock -->
+                        <div class="pc-meta">
+                            <div class="pc-rating">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <span class="pc-rcount">60 Reviews</span>
+                            </div>
+                            <div class="pc-stock">In Stock</div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+    <!-- ===== Classic Diaries Products End ===== -->
+    <div class="container mt-0 mb-0">
+        <div style="border-top: 2px solid #E3B505; width: 100%; margin: 2px;"></div>
+        <div style="border-top: 1px solid #2E2E2E; width: 100%; margin: 2px;"></div>
+    </div>
+    <!-- ===== Leather Diaries Products Start ===== -->
+    <section id="leather-diaries" class="container my-5">
+        <h2 class="text-center fw-bold mb-4">Leather Diaries</h2>
+        <div class="row">
+            <!-- Product 1 -->
+            <div class="col-md-4 col-sm-6 col-12 mb-4">
+                <article class="pc-card">
+                    <!-- Badge -->
+                    <div class="pc-badge-new">New Arrival</div>
+                    <!-- Product Image -->
+                    <div class="pc-img">
+                        <img src="./Assets/images/Leather-Diaries/leather-diary(1).jpg" alt="Leather Diary - Executive">
+                    </div>
+                    <!-- Product Info -->
+                    <div class="pc-info">
+                        <div class="pc-cat">Diary</div>
+                        <h2 class="pc-title">Leather Diary - Executive</h2>
+                        <p class="pc-desc">Premium leather diary for professionals with elegant design and quality
+                            paper.
+                        </p>
+                        <!-- Features -->
+                        <div class="pc-feats">
+                            <span class="pc-feat">Elegant Design</span>
+                            <span class="pc-feat">Premium Paper</span>
+                            <span class="pc-feat">Durable Binding</span>
+                        </div>
+                        <!-- Price and Actions -->
+                        <div class="pc-bottom">
+                            <div class="pc-price">
+                                <span class="pc-old">$29.99</span>
+                                <span class="pc-new">$24.99</span>
+                            </div>
+                            <div class="pc-actions">
+                                <a href="./Assets/docs/Leather Diaries/Leather Diary - Executive.docx"
+                                    class="pc-btn small-btn" title="Download" download>
+                                    <svg class="pc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path d="M12 3v12" />
+                                        <path d="M12 15l-4-4" />
+                                        <path d="M12 15l4-4" />
+                                        <line x1="5" y1="21" x2="19" y2="21" />
+                                    </svg>
+                                </a>
+                                <a href="#" class="pc-btn" aria-label="Add Leather Diary to Cart">
+                                    <span>Add to Cart</span>
+                                    <svg class="pc-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2">
+                                        <circle cx="9" cy="21" r="1" />
+                                        <circle cx="20" cy="21" r="1" />
+                                        <path d="M1 1h4l2.68 13.39a2 2 0 001.98 1.61h9.72a2 2 0 001.98-1.61L23 6H6" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Ratings and Stock -->
+                        <div class="pc-meta">
+                            <div class="pc-rating">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <span class="pc-rcount">65 Reviews</span>
+                            </div>
+                            <div class="pc-stock">In Stock</div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <!-- Product 2 -->
+            <div class="col-md-4 col-sm-6 col-12 mb-4">
+                <article class="pc-card">
+                    <!-- Badge -->
+                    <div class="pc-badge">Best Seller</div>
+                    <!-- Product Image -->
+                    <div class="pc-img">
+                        <img src="./Assets/images/Leather-Diaries/leather-diary(2).jpg" alt="Leather Diary - Premium">
+                    </div>
+                    <!-- Product Info -->
+                    <div class="pc-info">
+                        <div class="pc-cat">Diary</div>
+                        <h2 class="pc-title">Leather Diary - Premium</h2>
+                        <p class="pc-desc">Luxury leather diary with gold-embossed edges and high-quality binding.</p>
+                        <!-- Features -->
+                        <div class="pc-feats">
+                            <span class="pc-feat">Gold Edges</span>
+                            <span class="pc-feat">Premium Binding</span>
+                            <span class="pc-feat">Luxury Design</span>
+                        </div>
+                        <!-- Price and Actions -->
+                        <div class="pc-bottom">
+                            <div class="pc-price">
+                                <span class="pc-old">$29.99</span>
+                                <span class="pc-new">$26.99</span>
+                            </div>
+                            <div class="pc-actions">
+                                <a href="./Assets/docs/Leather Diaries/Leather Diary - Premium.docx"
+                                    class="pc-btn small-btn" title="Download" download>
+                                    <svg class="pc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path d="M12 3v12" />
+                                        <path d="M12 15l-4-4" />
+                                        <path d="M12 15l4-4" />
+                                        <line x1="5" y1="21" x2="19" y2="21" />
+                                    </svg>
+                                </a>
+                                <a href="#" class="pc-btn" aria-label="Add Leather Diary to Cart">
+                                    <span>Add to Cart</span>
+                                    <svg class="pc-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2">
+                                        <circle cx="9" cy="21" r="1" />
+                                        <circle cx="20" cy="21" r="1" />
+                                        <path d="M1 1h4l2.68 13.39a2 2 0 001.98 1.61h9.72a2 2 0 001.98-1.61L23 6H6" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Ratings and Stock -->
+                        <div class="pc-meta">
+                            <div class="pc-rating">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <span class="pc-rcount">102 Reviews</span>
+                            </div>
+                            <div class="pc-stock">In Stock</div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <!-- Product 3 -->
+            <div class="col-md-4 col-sm-6 col-12 mb-4">
+                <article class="pc-card">
+                    <!-- Badge -->
+                    <div class="pc-badge">Best Seller</div>
+                    <!-- Product Image -->
+                    <div class="pc-img">
+                        <img src="./Assets/images/Leather-Diaries/leather-diary(3).jpg" alt="Leather Diary - Planner">
+                    </div>
+                    <!-- Product Info -->
+                    <div class="pc-info">
+                        <div class="pc-cat">Diary</div>
+                        <h2 class="pc-title">Leather Diary - Planner</h2>
+                        <p class="pc-desc">Daily planner diary with premium leather cover for sophisticated
+                            organization.
+                        </p>
+                        <!-- Features -->
+                        <div class="pc-feats">
+                            <span class="pc-feat">Daily Layout</span>
+                            <span class="pc-feat">Premium Leather</span>
+                            <span class="pc-feat">Gold Edges</span>
+                        </div>
+                        <!-- Price and Actions -->
+                        <div class="pc-bottom">
+                            <div class="pc-price">
+                                <span class="pc-old">$28.99</span>
+                                <span class="pc-new">$25.49</span>
+                            </div>
+                            <div class="pc-actions">
+                                <a href="./Assets/docs/Leather Diaries/Leather Diary - Planner.docx"
+                                    class="pc-btn small-btn" title="Download" download>
+                                    <svg class="pc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path d="M12 3v12" />
+                                        <path d="M12 15l-4-4" />
+                                        <path d="M12 15l4-4" />
+                                        <line x1="5" y1="21" x2="19" y2="21" />
+                                    </svg>
+                                </a>
+                                <a href="#" class="pc-btn" aria-label="Add Leather Diary to Cart">
+                                    <span>Add to Cart</span>
+                                    <svg class="pc-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2">
+                                        <circle cx="9" cy="21" r="1" />
+                                        <circle cx="20" cy="21" r="1" />
+                                        <path d="M1 1h4l2.68 13.39a2 2 0 001.98 1.61h9.72a2 2 0 001.98-1.61L23 6H6" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Ratings and Stock -->
+                        <div class="pc-meta">
+                            <div class="pc-rating">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <span class="pc-rcount">58 Reviews</span>
+                            </div>
+                            <div class="pc-stock">In Stock</div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <!-- Product 4 -->
+            <div class="col-md-4 col-sm-6 col-12 mb-4">
+                <article class="pc-card">
+                    <!-- Badge -->
+                    <div class="pc-badge-low">Low Stock</div>
+                    <!-- Product Image -->
+                    <div class="pc-img">
+                        <img src="./Assets/images/Leather-Diaries/leather-diary(4).jpg"
+                            alt="Leather Diary - Classic Executive">
+                    </div>
+                    <!-- Product Info -->
+                    <div class="pc-info">
+                        <div class="pc-cat">Diary</div>
+                        <h2 class="pc-title">Leather Diary - Classic Executive</h2>
+                        <p class="pc-desc">Stylish leather diary suitable for executives and professionals.</p>
+                        <!-- Features -->
+                        <div class="pc-feats">
+                            <span class="pc-feat">Premium Leather</span>
+                            <span class="pc-feat">Elegant Design</span>
+                            <span class="pc-feat">Gold Edges</span>
+                        </div>
+                        <!-- Price and Actions -->
+                        <div class="pc-bottom">
+                            <div class="pc-price">
+                                <span class="pc-old">$30.99</span>
+                                <span class="pc-new">$27.99</span>
+                            </div>
+                            <div class="pc-actions">
+                                <a href="./Assets/docs/Leather Diaries/Leather Diary - Classic Executive.docx"
+                                    class="pc-btn small-btn" title="Download" download>
+                                    <svg class="pc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path d="M12 3v12" />
+                                        <path d="M12 15l-4-4" />
+                                        <path d="M12 15l4-4" />
+                                        <line x1="5" y1="21" x2="19" y2="21" />
+                                    </svg>
+                                </a>
+                                <a href="#" class="pc-btn" aria-label="Add Leather Diary to Cart">
+                                    <span>Add to Cart</span>
+                                    <svg class="pc-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2">
+                                        <circle cx="9" cy="21" r="1" />
+                                        <circle cx="20" cy="21" r="1" />
+                                        <path d="M1 1h4l2.68 13.39a2 2 0 001.98 1.61h9.72a2 2 0 001.98-1.61L23 6H6" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Ratings and Stock -->
+                        <div class="pc-meta">
+                            <div class="pc-rating">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <span class="pc-rcount">44 Reviews</span>
+                            </div>
+                            <div class="pc-stock">In Stock</div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <!-- Product 5 -->
+            <div class="col-md-4 col-sm-6 col-12 mb-4">
+                <article class="pc-card">
+                    <!-- Badge -->
+                    <div class="pc-badge">Best Seller</div>
+                    <!-- Product Image -->
+                    <div class="pc-img">
+                        <img src="./Assets/images/Leather-Diaries/leather-diary(5).jpg" alt="Leather Diary - Traveler">
+                    </div>
+                    <!-- Product Info -->
+                    <div class="pc-info">
+                        <div class="pc-cat">Diary</div>
+                        <h2 class="pc-title">Leather Diary - Traveler</h2>
+                        <p class="pc-desc">Compact leather diary for on-the-go planning and notes.</p>
+                        <!-- Features -->
+                        <div class="pc-feats">
+                            <span class="pc-feat">Portable</span>
+                            <span class="pc-feat">Premium Leather</span>
+                            <span class="pc-feat">Durable Binding</span>
+                        </div>
+                        <!-- Price and Actions -->
+                        <div class="pc-bottom">
+                            <div class="pc-price">
+                                <span class="pc-old">$27.99</span>
+                                <span class="pc-new">$23.99</span>
+                            </div>
+                            <div class="pc-actions">
+                                <a href="./Assets/docs/Leather Diaries/Leather Diary - Traveler.docx"
+                                    class="pc-btn small-btn" title="Download" download>
+                                    <svg class="pc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path d="M12 3v12" />
+                                        <path d="M12 15l-4-4" />
+                                        <path d="M12 15l4-4" />
+                                        <line x1="5" y1="21" x2="19" y2="21" />
+                                    </svg>
+                                </a>
+                                <a href="#" class="pc-btn" aria-label="Add Leather Diary to Cart">
+                                    <span>Add to Cart</span>
+                                    <svg class="pc-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2">
+                                        <circle cx="9" cy="21" r="1" />
+                                        <circle cx="20" cy="21" r="1" />
+                                        <path d="M1 1h4l2.68 13.39a2 2 0 001.98 1.61h9.72a2 2 0 001.98-1.61L23 6H6" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Ratings and Stock -->
+                        <div class="pc-meta">
+                            <div class="pc-rating">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <span class="pc-rcount">63 Reviews</span>
+                            </div>
+                            <div class="pc-stock">In Stock</div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <!-- Product 6 -->
+            <div class="col-md-4 col-sm-6 col-12 mb-4">
+                <article class="pc-card">
+                    <!-- Badge -->
+                    <div class="pc-badge-low">Low Stock</div>
+                    <!-- Product Image -->
+                    <div class="pc-img">
+                        <img src="./Assets/images/Leather-Diaries/leather-diary(6).jpg" alt="Leather Diary - Signature">
+                    </div>
+                    <!-- Product Info -->
+                    <div class="pc-info">
+                        <div class="pc-cat">Diary</div>
+                        <h2 class="pc-title">Leather Diary - Signature</h2>
+                        <p class="pc-desc">High-end leather diary with elegant stitching and premium paper quality.</p>
+                        <!-- Features -->
+                        <div class="pc-feats">
+                            <span class="pc-feat">Premium Leather</span>
+                            <span class="pc-feat">Elegant Stitching</span>
+                            <span class="pc-feat">Gold Edges</span>
+                        </div>
+                        <!-- Price and Actions -->
+                        <div class="pc-bottom">
+                            <div class="pc-price">
+                                <span class="pc-old">$32.49</span>
+                                <span class="pc-new">$28.49</span>
+                            </div>
+                            <div class="pc-actions">
+                                <a href="./Assets/docs/Leather Diaries/Leather Diary - Signature.docx"
+                                    class="pc-btn small-btn" title="Download" download>
+                                    <svg class="pc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path d="M12 3v12" />
+                                        <path d="M12 15l-4-4" />
+                                        <path d="M12 15l4-4" />
+                                        <line x1="5" y1="21" x2="19" y2="21" />
+                                    </svg>
+                                </a>
+                                <a href="#" class="pc-btn" aria-label="Add Leather Diary to Cart">
+                                    <span>Add to Cart</span>
+                                    <svg class="pc-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2">
+                                        <circle cx="9" cy="21" r="1" />
+                                        <circle cx="20" cy="21" r="1" />
+                                        <path d="M1 1h4l2.68 13.39a2 2 0 001.98 1.61h9.72a2 2 0 001.98-1.61L23 6H6" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Ratings and Stock -->
+                        <div class="pc-meta">
+                            <div class="pc-rating">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <span class="pc-rcount">51 Reviews</span>
+                            </div>
+                            <div class="pc-stock">In Stock</div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+    <!-- ===== Leather Diaries Products End ===== -->
+    <div class="container mt-0 mb-0">
+        <div style="border-top: 2px solid #E3B505; width: 100%; margin: 2px;"></div>
+        <div style="border-top: 1px solid #2E2E2E; width: 100%; margin: 2px;"></div>
+    </div>
+    <!-- ===== Pocket Diaries Products Start ===== -->
+    <section id="pocket-diaries" class="container my-5">
+        <h2 class="text-center fw-bold mb-4">Pocket Diaries</h2>
+        <div class="row">
+            <!-- Product 1 -->
+            <div class="col-md-4 col-sm-6 col-12 mb-4">
+                <article class="pc-card">
+                    <!-- Badge -->
+                    <div class="pc-badge-new">New Arrival</div>
+                    <!-- Product Image -->
+                    <div class="pc-img">
+                        <img src="./Assets/images/Pocket-Diaries/pocket-diary(1).jpg" alt="Pocket Diary - Compact">
+                    </div>
+                    <!-- Product Info -->
+                    <div class="pc-info">
+                        <div class="pc-cat">Diary</div>
+                        <h2 class="pc-title">Pocket Diary - Compact</h2>
+                        <p class="pc-desc">Small, portable diary for quick notes and appointments on the go.</p>
+                        <!-- Features -->
+                        <div class="pc-feats">
+                            <span class="pc-feat">Compact</span>
+                            <span class="pc-feat">Portable</span>
+                            <span class="pc-feat">Lightweight</span>
+                        </div>
+                        <!-- Price and Actions -->
+                        <div class="pc-bottom">
+                            <div class="pc-price">
+                                <span class="pc-old">$11.99</span>
+                                <span class="pc-new">$9.99</span>
+                            </div>
+                            <div class="pc-actions">
+                                <a href="./Assets/docs/Pocket Diaries/Pocket Diary - Compact.docx"
+                                    class="pc-btn small-btn" title="Download" download>
+                                    <svg class="pc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path d="M12 3v12" />
+                                        <path d="M12 15l-4-4" />
+                                        <path d="M12 15l4-4" />
+                                        <line x1="5" y1="21" x2="19" y2="21" />
+                                    </svg>
+                                </a>
+                                <a href="#" class="pc-btn" aria-label="Add Pocket Diary to Cart">
+                                    <span>Add to Cart</span>
+                                    <svg class="pc-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2">
+                                        <circle cx="9" cy="21" r="1" />
+                                        <circle cx="20" cy="21" r="1" />
+                                        <path d="M1 1h4l2.68 13.39a2 2 0 001.98 1.61h9.72a2 2 0 001.98-1.61L23 6H6" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Ratings and Stock -->
+                        <div class="pc-meta">
+                            <div class="pc-rating">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <span class="pc-rcount">48 Reviews</span>
+                            </div>
+                            <div class="pc-stock">In Stock</div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <!-- Product 2 -->
+            <div class="col-md-4 col-sm-6 col-12 mb-4">
+                <article class="pc-card">
+                    <!-- Badge -->
+                    <div class="pc-badge">Best Seller</div>
+                    <!-- Product Image -->
+                    <div class="pc-img">
+                        <img src="./Assets/images/Pocket-Diaries/pocket-diary(2).jpg" alt="Pocket Diary - Weekly">
+                    </div>
+                    <!-- Product Info -->
+                    <div class="pc-info">
+                        <div class="pc-cat">Diary</div>
+                        <h2 class="pc-title">Pocket Diary - Weekly</h2>
+                        <p class="pc-desc">Portable , compact diary with a weekly layout for easy scheduling.</p>
+                        <!-- Features -->
+                        <div class="pc-feats">
+                            <span class="pc-feat">Weekly Layout</span>
+                            <span class="pc-feat">Compact</span>
+                            <span class="pc-feat">Durable</span>
+                        </div>
+                        <!-- Price and Actions -->
+                        <div class="pc-bottom">
+                            <div class="pc-price">
+                                <span class="pc-old">$12.49</span>
+                                <span class="pc-new">$10.49</span>
+                            </div>
+                            <div class="pc-actions">
+                                <a href="./Assets/docs/Pocket Diaries/Pocket Diary - Weekly.docx"
+                                    class="pc-btn small-btn" title="Download" download>
+                                    <svg class="pc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path d="M12 3v12" />
+                                        <path d="M12 15l-4-4" />
+                                        <path d="M12 15l4-4" />
+                                        <line x1="5" y1="21" x2="19" y2="21" />
+                                    </svg>
+                                </a>
+                                <a href="#" class="pc-btn" aria-label="Add Pocket Diary to Cart">
+                                    <span>Add to Cart</span>
+                                    <svg class="pc-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2">
+                                        <circle cx="9" cy="21" r="1" />
+                                        <circle cx="20" cy="21" r="1" />
+                                        <path d="M1 1h4l2.68 13.39a2 2 0 001.98 1.61h9.72a2 2 0 001.98-1.61L23 6H6" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Ratings and Stock -->
+                        <div class="pc-meta">
+                            <div class="pc-rating">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <span class="pc-rcount">55 Reviews</span>
+                            </div>
+                            <div class="pc-stock">In Stock</div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <!-- Product 3 -->
+            <div class="col-md-4 col-sm-6 col-12 mb-4">
+                <article class="pc-card">
+                    <!-- Badge -->
+                    <div class="pc-badge-low">Low Stock</div>
+                    <!-- Product Image -->
+                    <div class="pc-img">
+                        <img src="./Assets/images/Pocket-Diaries/pocket-diary(3).jpg" alt="Pocket Diary - Daily Notes">
+                    </div>
+                    <!-- Product Info -->
+                    <div class="pc-info">
+                        <div class="pc-cat">Diary</div>
+                        <h2 class="pc-title">Pocket Diary - Daily Notes</h2>
+                        <p class="pc-desc">Compact daily diary for jotting down quick thoughts and appointments.</p>
+                        <!-- Features -->
+                        <div class="pc-feats">
+                            <span class="pc-feat">Daily Layout</span>
+                            <span class="pc-feat">Portable</span>
+                            <span class="pc-feat">Durable</span>
+                        </div>
+                        <!-- Price and Actions -->
+                        <div class="pc-bottom">
+                            <div class="pc-price">
+                                <span class="pc-old">$10.99</span>
+                                <span class="pc-new">$9.49</span>
+                            </div>
+                            <div class="pc-actions">
+                                <a href="./Assets/docs/Pocket Diaries/Pocket Diary - Daily Notes.docx"
+                                    class="pc-btn small-btn" title="Download" download>
+                                    <svg class="pc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path d="M12 3v12" />
+                                        <path d="M12 15l-4-4" />
+                                        <path d="M12 15l4-4" />
+                                        <line x1="5" y1="21" x2="19" y2="21" />
+                                    </svg>
+                                </a>
+                                <a href="#" class="pc-btn" aria-label="Add Pocket Diary to Cart">
+                                    <span>Add to Cart</span>
+                                    <svg class="pc-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2">
+                                        <circle cx="9" cy="21" r="1" />
+                                        <circle cx="20" cy="21" r="1" />
+                                        <path d="M1 1h4l2.68 13.39a2 2 0 001.98 1.61h9.72a2 2 0 001.98-1.61L23 6H6" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Ratings and Stock -->
+                        <div class="pc-meta">
+                            <div class="pc-rating">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <span class="pc-rcount">33 Reviews</span>
+                            </div>
+                            <div class="pc-stock">In Stock</div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <!-- Product 4 -->
+            <div class="col-md-4 col-sm-6 col-12 mb-4">
+                <article class="pc-card">
+                    <!-- Badge -->
+                    <div class="pc-badge-new">New Arrival</div>
+                    <!-- Product Image -->
+                    <div class="pc-img">
+                        <img src="./Assets/images/Pocket-Diaries/pocket-diary(4).jpg" alt="Pocket Diary - Leatherette">
+                    </div>
+                    <!-- Product Info -->
+                    <div class="pc-info">
+                        <div class="pc-cat">Diary</div>
+                        <h2 class="pc-title">Pocket Diary - Leatherette</h2>
+                        <p class="pc-desc">Small diary with leatherette cover for a premium feel on the go.</p>
+                        <!-- Features -->
+                        <div class="pc-feats">
+                            <span class="pc-feat">Leatherette Cover</span>
+                            <span class="pc-feat">Compact</span>
+                            <span class="pc-feat">Lightweight</span>
+                        </div>
+                        <!-- Price and Actions -->
+                        <div class="pc-bottom">
+                            <div class="pc-price">
+                                <span class="pc-old">$12.49</span>
+                                <span class="pc-new">$11.49</span>
+                            </div>
+                            <div class="pc-actions">
+                                <a href="./Assets/docs/Pocket Diaries/Pocket Diary - Leatherette.docx"
+                                    class="pc-btn small-btn" title="Download" download>
+                                    <svg class="pc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path d="M12 3v12" />
+                                        <path d="M12 15l-4-4" />
+                                        <path d="M12 15l4-4" />
+                                        <line x1="5" y1="21" x2="19" y2="21" />
+                                    </svg>
+                                </a>
+                                <a href="#" class="pc-btn" aria-label="Add Pocket Diary to Cart">
+                                    <span>Add to Cart</span>
+                                    <svg class="pc-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2">
+                                        <circle cx="9" cy="21" r="1" />
+                                        <circle cx="20" cy="21" r="1" />
+                                        <path d="M1 1h4l2.68 13.39a2 2 0 001.98 1.61h9.72a2 2 0 001.98-1.61L23 6H6" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Ratings and Stock -->
+                        <div class="pc-meta">
+                            <div class="pc-rating">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <span class="pc-rcount">29 Reviews</span>
+                            </div>
+                            <div class="pc-stock">In Stock</div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <!-- Product 5 -->
+            <div class="col-md-4 col-sm-6 col-12 mb-4">
+                <article class="pc-card">
+                    <!-- Badge -->
+                    <div class="pc-badge">Best Seller</div>
+                    <!-- Product Image -->
+                    <div class="pc-img">
+                        <img src="./Assets/images/Pocket-Diaries/pocket-diary(5).jpg" alt="Pocket Diary - Planner Mini">
+                    </div>
+                    <!-- Product Info -->
+                    <div class="pc-info">
+                        <div class="pc-cat">Diary</div>
+                        <h2 class="pc-title">Pocket Diary - Planner Mini</h2>
+                        <p class="pc-desc">Mini diary with weekly planning layout, perfect for quick notes.</p>
+                        <!-- Features -->
+                        <div class="pc-feats">
+                            <span class="pc-feat">Weekly Layout</span>
+                            <span class="pc-feat">Compact</span>
+                            <span class="pc-feat">Portable</span>
+                        </div>
+                        <!-- Price and Actions -->
+                        <div class="pc-bottom">
+                            <div class="pc-price">
+                                <span class="pc-old">$12.49</span>
+                                <span class="pc-new">$10.99</span>
+                            </div>
+                            <div class="pc-actions">
+                                <a href="./Assets/docs/Pocket Diaries/Pocket Diary - Planner Mini.docx"
+                                    class="pc-btn small-btn" title="Download" download>
+                                    <svg class="pc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path d="M12 3v12" />
+                                        <path d="M12 15l-4-4" />
+                                        <path d="M12 15l4-4" />
+                                        <line x1="5" y1="21" x2="19" y2="21" />
+                                    </svg>
+                                </a>
+                                <a href="#" class="pc-btn" aria-label="Add Pocket Diary to Cart">
+                                    <span>Add to Cart</span>
+                                    <svg class="pc-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2">
+                                        <circle cx="9" cy="21" r="1" />
+                                        <circle cx="20" cy="21" r="1" />
+                                        <path d="M1 1h4l2.68 13.39a2 2 0 001.98 1.61h9.72a2 2 0 001.98-1.61L23 6H6" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Ratings and Stock -->
+                        <div class="pc-meta">
+                            <div class="pc-rating">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <span class="pc-rcount">47 Reviews</span>
+                            </div>
+                            <div class="pc-stock">In Stock</div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <!-- Product 6 -->
+            <div class="col-md-4 col-sm-6 col-12 mb-4">
+                <article class="pc-card">
+                    <!-- Badge -->
+                    <div class="pc-badge-low">Low Stock</div>
+                    <!-- Product Image -->
+                    <div class="pc-img">
+                        <img src="./Assets/images/Pocket-Diaries/pocket-diary(6).jpg"
+                            alt="Pocket Diary - Pocket Planner">
+                    </div>
+                    <!-- Product Info -->
+                    <div class="pc-info">
+                        <div class="pc-cat">Diary</div>
+                        <h2 class="pc-title">Pocket Diary - Pocket Planner</h2>
+                        <p class="pc-desc">Compact planner diary for daily use, easily fits in your pocket or bag.</p>
+                        <!-- Features -->
+                        <div class="pc-feats">
+                            <span class="pc-feat">Daily Planner</span>
+                            <span class="pc-feat">Portable</span>
+                            <span class="pc-feat">Lightweight</span>
+                        </div>
+                        <!-- Price and Actions -->
+                        <div class="pc-bottom">
+                            <div class="pc-price">
+                                <span class="pc-old">$10.49</span>
+                                <span class="pc-new">$9.79</span>
+                            </div>
+                            <div class="pc-actions">
+                                <a href="./Assets/docs/Pocket Diaries/Pocket Diary - Pocket Planner.docx"
+                                    class="pc-btn small-btn" title="Download" download>
+                                    <svg class="pc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path d="M12 3v12" />
+                                        <path d="M12 15l-4-4" />
+                                        <path d="M12 15l4-4" />
+                                        <line x1="5" y1="21" x2="19" y2="21" />
+                                    </svg>
+                                </a>
+                                <a href="#" class="pc-btn" aria-label="Add Pocket Diary to Cart">
+                                    <span>Add to Cart</span>
+                                    <svg class="pc-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2">
+                                        <circle cx="9" cy="21" r="1" />
+                                        <circle cx="20" cy="21" r="1" />
+                                        <path d="M1 1h4l2.68 13.39a2 2 0 001.98 1.61h9.72a2 2 0 001.98-1.61L23 6H6" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Ratings and Stock -->
+                        <div class="pc-meta">
+                            <div class="pc-rating">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <span class="pc-rcount">21 Reviews</span>
+                            </div>
+                            <div class="pc-stock">In Stock</div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+    <!-- ===== Pocket Diaries Products End ===== -->
+    <!-- Footer START -->
+    <footer class="footer bg-dark py-5">
+        <div class="container">
+            <div class="d-flex flex-row flex-wrap">
+                <!-- Company Info -->
+                <div class="footer-col">
+                    <h5 class="text-warning fw-bold">Ryana Calendars</h5>
+                    <p class="text-light">123 Ryana Street, Karachi, Pakistan</p>
+                    <p class="text-light">Email: <a href="mailto:info@ryanacalendars.com"
+                            class="text-warning">info@ryanacalendars.com</a>
+                    </p>
+                    <p class="text-light">Phone: <a href="tel:+921234567890" class="text-warning">+92 123 456 7890</a>
+                    </p>
+                </div>
+                <!-- Products -->
+                <div class="footer-col">
+                    <h5 class="text-warning fw-bold">Products</h5>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="./journals.html" class="text-light text-decoration-none">Journals</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-light text-decoration-none">Diaries</a>
+                        </li>
+                        <li>
+                            <a href="./calenders.html" class="text-light text-decoration-none">Calendars</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Quick Links -->
+                <div class="footer-col">
+                    <h5 class="text-warning fw-bold">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="index.html#products" class="text-light text-decoration-none">All Products</a>
+                        </li>
+                        <li>
+                            <a href="index.html#home-contact" class="text-light text-decoration-none">Contact Us</a>
+                        </li>
+                        <li>
+                            <a href="Assets/docs/PriceList.docx" class="text-light text-decoration-none" download>Price
+                                List</a>
+                        </li>
+                        <li>
+                            <a href="index.html#about-us" class="text-light text-decoration-none">About Us</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Social Media -->
+                <div class="footer-col">
+                    <h5 class="text-warning fw-bold">Follow Us</h5>
+                    <div class="social-icons d-flex gap-3">
+                        <a href="#" class="text-warning fs-4">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a href="#" class="text-warning fs-4">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        <a href="#" class="text-warning fs-4">
+                            <i class="bi bi-twitter"></i>
+                        </a>
+                        <a href="#" class="text-warning fs-4">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <hr class="border-secondary my-4">
+            <div class="text-center text-light small"> &copy; 2025 Ryana Calendars. All Rights Reserved. </div>
+        </div>
+    </footer>
+    <!-- Footer END -->
+    <!-- ===== Bootstrap JS ===== -->
+    <script src="./Assets/js/bootstrap.bundle.min.js"></script>
+    <!-- ===== JS initializer for all carousels ===== -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Select all carousels
+            var carousels = document.querySelectorAll('.carousel');
+            carousels.forEach(function (el) {
+                try {
+                    // Initialize each carousel if not already initialized
+                    if (typeof bootstrap !== 'undefined' && bootstrap.Carousel) {
+                        var carousel = bootstrap.Carousel.getInstance(el) || new bootstrap.Carousel(el, {
+                            interval: 4000, // 4 seconds
+                            pause: 'hover',
+                            ride: 'carousel',
+                            touch: true
+                        });
+                        carousel.cycle(); // ensure it starts
+                    } else {
+                        console.warn('Bootstrap JS not found. Carousel will not work until bootstrap.bundle.min.js is loaded.');
+                    }
+                } catch (err) {
+                    console.error('Carousel init error:', err);
+                }
+            });
+        });
+    </script>
+    <!-- Simple "Add to Cart" feedback -->
+    <script>
+        document.querySelectorAll('.add-to-cart-btn, .pc-btn[aria-label^="Add"]').forEach(btn => {
+            btn.addEventListener('click', e => {
+                e.preventDefault(); // stop page jump
+                const productName =
+                    btn.dataset.product ||
+                    btn.getAttribute('aria-label')?.replace('Add ', '').replace(' to Cart', '') ||
+                    'Product';
+
+                // Show a friendly alert message
+                alert(`${productName} added to cart!`);
+            });
+        });
+    </script>
+
+</body>
+
+</html>

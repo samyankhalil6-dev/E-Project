@@ -1,0 +1,1557 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ryana Calenders-Calenders</title>
+    <link rel="stylesheet" href="./Assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./Assets/css/style.css">
+    <link rel="stylesheet" href="./Assets/css/bootstrap-icons.css">
+</head>
+
+<body>
+    <!-- NAVBAR START -->
+    <nav class="navbar navbar-expand-lg navbarbg">
+        <div class="container-fluid">
+            <!-- Logo -->
+            <span class="navbar-brand m-0">
+                <img src="./Assets/images/logo.png" alt="Ryana Calendars" class="logo-img">
+            </span>
+            <!-- Toggler/collapsible Button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Navbar Links -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link navitem" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle navitem" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">Products</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./journals.html">Journals</a></li>
+                            <li><a class="dropdown-item" href="#">Calenders</a></li>
+                            <li><a class="dropdown-item" href="./diaries.html">Diaries</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link navitem" href="./contact.html#map-section">Location</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link navitem" href="./contact.html#price-list-section">Price List</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link navitem" href="./contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- NAVBAR END -->
+    <!-- ===== Calendars Hero Carousel Start ===== -->
+    <div id="calendarCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000"
+        aria-label="Calendars Carousel">
+        <!-- Indicators / Dots -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#calendarCarousel" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#calendarCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#calendarCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <!-- Slides -->
+        <div class="carousel-inner">
+            <!-- Slide 1: Wall Calendars -->
+            <div class="carousel-item active">
+                <div class="hero-slide" style="background-image: url('./Assets/images/calendars-wall.jpg');">
+                    <div class="overlay" aria-hidden="true"></div>
+                    <div class="carousel-caption d-flex flex-column justify-content-center align-items-center h-100">
+                        <h1 class="fw-bold display-4">Wall Calendars</h1>
+                        <p class="lead">Beautiful scenic and artistic designs to adorn your walls.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Slide 2: Desk Calendars -->
+            <div class="carousel-item">
+                <div class="hero-slide" style="background-image: url('./Assets/images/calendars-desk.jpg');">
+                    <div class="overlay" aria-hidden="true"></div>
+                    <div class="carousel-caption d-flex flex-column justify-content-center align-items-center h-100">
+                        <h1 class="fw-bold display-4">Desk Calendars</h1>
+                        <p class="lead">Compact and practical calendars perfect for your desk or workspace.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Slide 3: Planner Calendars -->
+            <div class="carousel-item">
+                <div class="hero-slide" style="background-image: url('./Assets/images/calendars-planner.jpg');">
+                    <div class="overlay" aria-hidden="true"></div>
+                    <div class="carousel-caption d-flex flex-column justify-content-center align-items-center h-100">
+                        <h1 class="fw-bold display-4">Planner Calendars</h1>
+                        <p class="lead">Organize your month and week with our stylish planner calendars.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#calendarCarousel" data-bs-slide="prev">
+            <span class="calendar-carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#calendarCarousel" data-bs-slide="next">
+            <span class="calendar-carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- ===== Calendars Hero Carousel End ===== -->
+    <!-- ===== Calendars Categories Start ===== -->
+    <section class="container my-5">
+        <h2 class="text-center fw-bold mb-4">Calendar Categories</h2>
+        <div class="row text-center">
+            <!-- Wall Calendars -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow-sm category-card">
+                    <img src="./Assets/images/calendars-wall.jpg" class="card-img-top" alt="Wall Calendars">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Wall Calendars</h5>
+                        <p class="card-text">Beautiful scenic and artistic designs to adorn your walls.</p>
+                        <a href="#wall-calendars" class="btn btn-warning">Explore</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Desk Calendars -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow-sm category-card">
+                    <img src="./Assets/images/calendars-desk.jpg" class="card-img-top" alt="Desk Calendars">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Desk Calendars</h5>
+                        <p class="card-text">Compact and practical calendars perfect for your desk or workspace.</p>
+                        <a href="#desk-calendars" class="btn btn-warning">Explore</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Planner Calendars -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow-sm category-card">
+                    <img src="./Assets/images/calendars-planner.jpg" class="card-img-top" alt="Planner Calendars">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Planner Calendars</h5>
+                        <p class="card-text">Organize your month and week with our stylish planner calendars.</p>
+                        <a href="#planner-calendars" class="btn btn-warning">Explore</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ===== Calendars Categories End ===== -->
+    <div class="container mt-0 mb-0">
+        <div style="border-top: 2px solid #E3B505; width: 100%; margin: 2px;"></div>
+        <div style="border-top: 1px solid #2E2E2E; width: 100%; margin: 2px;"></div>
+    </div>
+    <!-- ===== Wall Calendars Products Start ===== -->
+    <section id="wall-calendars" class="container my-5">
+        <h2 class="text-center fw-bold mb-4">Wall Calendars</h2>
+        <div class="row">
+            <!-- Product 1 -->
+            <div class="col-md-4 col-sm-6 col-12 mb-4">
+                <article class="pc-card">
+                    <!-- Badge -->
+                    <div class="pc-badge-new">New Arrival</div>
+                    <!-- Product Image -->
+                    <div class="pc-img">
+                        <img src="./Assets/images/Wall-Calendars/wall-calendar(1).jpg"
+                            alt="Wall Calendar - Scenic 2025">
+                    </div>
+                    <!-- Product Info -->
+                    <div class="pc-info">
+                        <div class="pc-cat">Calendar</div>
+                        <h2 class="pc-title">Wall Calendar - Scenic 2025</h2>
+                        <p class="pc-desc">Beautiful scenic photography for every month to brighten your walls.</p>
+                        <!-- Features -->
+                        <div class="pc-feats">
+                            <span class="pc-feat">12 Months</span>
+                            <span class="pc-feat">High-Quality Prints</span>
+                            <span class="pc-feat">Glossy Finish</span>
+                        </div>
+                        <!-- Price and Actions -->
+                        <div class="pc-bottom">
+                            <div class="pc-price">
+                                <span class="pc-old">$18.99</span>
+                                <span class="pc-new">$15.99</span>
+                            </div>
+                            <div class="pc-actions">
+                                <a href="./Assets/docs/Wall Calendars/Wall Calendar - Scenic 2025.docx"
+                                    class="pc-btn small-btn" title="Download" download>
+                                    <svg class="pc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path d="M12 3v12" />
+                                        <path d="M12 15l-4-4" />
+                                        <path d="M12 15l4-4" />
+                                        <line x1="5" y1="21" x2="19" y2="21" />
+                                    </svg>
+                                </a>
+                                <a href="#" class="pc-btn" aria-label="Add Wall Calendar to Cart">
+                                    <span>Add to Cart</span>
+                                    <svg class="pc-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2">
+                                        <circle cx="9" cy="21" r="1" />
+                                        <circle cx="20" cy="21" r="1" />
+                                        <path d="M1 1h4l2.68 13.39a2 2 0 001.98 1.61h9.72a2 2 0 001.98-1.61L23 6H6" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Ratings and Stock -->
+                        <div class="pc-meta">
+                            <div class="pc-rating">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 
+                                            5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 
+                                            5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 
+                                            5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <span class="pc-rcount">95 Reviews</span>
+                            </div>
+                            <div class="pc-stock">In Stock</div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <!-- Product 2 -->
+            <div class="col-md-4 col-sm-6 col-12 mb-4">
+                <article class="pc-card">
+                    <!-- Badge -->
+                    <div class="pc-badge-low">Low Stock</div>
+                    <!-- Product Image -->
+                    <div class="pc-img">
+                        <img src="./Assets/images/Wall-Calendars/wall-calendar(2).jpg"
+                            alt="Wall Calendar - Floral 2025">
+                    </div>
+                    <!-- Product Info -->
+                    <div class="pc-info">
+                        <div class="pc-cat">Calendar</div>
+                        <h2 class="pc-title">Wall Calendar - Floral 2025</h2>
+                        <p class="pc-desc">Vibrant floral designs to add a lively touch to your walls.</p>
+                        <!-- Features -->
+                        <div class="pc-feats">
+                            <span class="pc-feat">12 Months</span>
+                            <span class="pc-feat">Vibrant Colors</span>
+                            <span class="pc-feat">Eco-Friendly Paper</span>
+                        </div>
+                        <!-- Price and Actions -->
+                        <div class="pc-bottom">
+                            <div class="pc-price">
+                                <span class="pc-old">$16.99</span>
+                                <span class="pc-new">$14.99</span>
+                            </div>
+                            <div class="pc-actions">
+                                <a href="./Assets/docs/Wall Calendars/Wall Calendar - Floral 2025.docx"
+                                    class="pc-btn small-btn" title="Download" download>
+                                    <svg class="pc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path d="M12 3v12" />
+                                        <path d="M12 15l-4-4" />
+                                        <path d="M12 15l4-4" />
+                                        <line x1="5" y1="21" x2="19" y2="21" />
+                                    </svg>
+                                </a>
+                                <a href="#" class="pc-btn" aria-label="Add Wall Calendar to Cart">
+                                    <span>Add to Cart</span>
+                                    <svg class="pc-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2">
+                                        <circle cx="9" cy="21" r="1" />
+                                        <circle cx="20" cy="21" r="1" />
+                                        <path d="M1 1h4l2.68 13.39a2 2 0 001.98 1.61h9.72a2 2 0 001.98-1.61L23 6H6" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Ratings and Stock -->
+                        <div class="pc-meta">
+                            <div class="pc-rating">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 
+                                            5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 
+                                            5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <span class="pc-rcount">80 Reviews</span>
+                            </div>
+                            <div class="pc-stock">Only 7 Left</div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <!-- Product 3 -->
+            <div class="col-md-4 col-sm-6 col-12 mb-4">
+                <article class="pc-card">
+                    <!-- Badge -->
+                    <div class="pc-badge">Best Seller</div>
+                    <!-- Product Image -->
+                    <div class="pc-img">
+                        <img src="./Assets/images/Wall-Calendars/wall-calendar(3).jpg"
+                            alt="Wall Calendar - Artistic 2025">
+                    </div>
+                    <!-- Product Info -->
+                    <div class="pc-info">
+                        <div class="pc-cat">Calendar</div>
+                        <h2 class="pc-title">Wall Calendar - Artistic 2025</h2>
+                        <p class="pc-desc">Artistic monthly illustrations for inspiration and creativity.</p>
+                        <!-- Features -->
+                        <div class="pc-feats">
+                            <span class="pc-feat">12 Months</span>
+                            <span class="pc-feat">Artistic Illustrations</span>
+                            <span class="pc-feat">High-Resolution Prints</span>
+                        </div>
+                        <!-- Price and Actions -->
+                        <div class="pc-bottom">
+                            <div class="pc-price">
+                                <span class="pc-old">$19.99</span>
+                                <span class="pc-new">$16.99</span>
+                            </div>
+                            <div class="pc-actions">
+                                <a href="./Assets/docs/Wall Calendars/Wall Calendar - Artistic 2025.docx"
+                                    class="pc-btn small-btn" title="Download" download>
+                                    <svg class="pc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path d="M12 3v12" />
+                                        <path d="M12 15l-4-4" />
+                                        <path d="M12 15l4-4" />
+                                        <line x1="5" y1="21" x2="19" y2="21" />
+                                    </svg>
+                                </a>
+                                <a href="#" class="pc-btn" aria-label="Add Wall Calendar to Cart">
+                                    <span>Add to Cart</span>
+                                    <svg class="pc-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2">
+                                        <circle cx="9" cy="21" r="1" />
+                                        <circle cx="20" cy="21" r="1" />
+                                        <path d="M1 1h4l2.68 13.39a2 2 0 001.98 1.61h9.72a2 2 0 001.98-1.61L23 6H6" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Ratings and Stock -->
+                        <div class="pc-meta">
+                            <div class="pc-rating">
+                                <!-- 3 Stars -->
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 
+                                            5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 
+                                            5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 
+                                            5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 
+                                            5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <span class="pc-rcount">135 Reviews</span>
+                            </div>
+                            <div class="pc-stock">In Stock</div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <!-- Product 4 -->
+            <div class="col-md-4 col-sm-6 col-12 mb-4">
+                <article class="pc-card">
+                    <!-- Badge -->
+                    <div class="pc-badge-low">Low Stock</div>
+                    <!-- Product Image -->
+                    <div class="pc-img">
+                        <img src="./Assets/images/Wall-Calendars/wall-calendar(4).jpg"
+                            alt="Wall Calendar - Nature 2025">
+                    </div>
+                    <!-- Product Info -->
+                    <div class="pc-info">
+                        <div class="pc-cat">Calendar</div>
+                        <h2 class="pc-title">Wall Calendar - Nature 2025</h2>
+                        <p class="pc-desc">Stunning nature photography for every season to enhance your space.</p>
+                        <!-- Features -->
+                        <div class="pc-feats">
+                            <span class="pc-feat">12 Months</span>
+                            <span class="pc-feat">Nature Photography</span>
+                            <span class="pc-feat">Matte Finish</span>
+                        </div>
+                        <!-- Price and Actions -->
+                        <div class="pc-bottom">
+                            <div class="pc-price">
+                                <span class="pc-old">$20.99</span>
+                                <span class="pc-new">$17.99</span>
+                            </div>
+                            <div class="pc-actions">
+                                <a href="./Assets/docs/Wall Calendars/Wall Calendar - Nature 2025.docx"
+                                    class="pc-btn small-btn" title="Download" download>
+                                    <svg class="pc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path d="M12 3v12" />
+                                        <path d="M12 15l-4-4" />
+                                        <path d="M12 15l4-4" />
+                                        <line x1="5" y1="21" x2="19" y2="21" />
+                                    </svg>
+                                </a>
+                                <a href="#" class="pc-btn" aria-label="Add Wall Calendar to Cart">
+                                    <span>Add to Cart</span>
+                                    <svg class="pc-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2">
+                                        <circle cx="9" cy="21" r="1" />
+                                        <circle cx="20" cy="21" r="1" />
+                                        <path d="M1 1h4l2.68 13.39a2 2 0 001.98 1.61h9.72a2 2 0 001.98-1.61L23 6H6" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Ratings and Stock -->
+                        <div class="pc-meta">
+                            <div class="pc-rating">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 
+                                            5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 
+                                            5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <span class="pc-rcount">85 Reviews</span>
+                            </div>
+                            <div class="pc-stock">Out of Stock</div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <!-- Product 5 -->
+            <div class="col-md-4 col-sm-6 col-12 mb-4">
+                <article class="pc-card">
+                    <!-- Badge -->
+                    <div class="pc-badge">Best Seller</div>
+                    <!-- Product Image -->
+                    <div class="pc-img">
+                        <img src="./Assets/images/Wall-Calendars/wall-calendar(5).jpg"
+                            alt="Wall Calendar - Vintage 2025">
+                    </div>
+                    <!-- Product Info -->
+                    <div class="pc-info">
+                        <div class="pc-cat">Calendar</div>
+                        <h2 class="pc-title">Wall Calendar - Vintage 2025</h2>
+                        <p class="pc-desc">Classic vintage designs perfect for your home or office walls.</p>
+                        <!-- Features -->
+                        <div class="pc-feats">
+                            <span class="pc-feat">12 Months</span>
+                            <span class="pc-feat">Vintage Designs</span>
+                            <span class="pc-feat">Premium Paper</span>
+                        </div>
+                        <!-- Price and Actions -->
+                        <div class="pc-bottom">
+                            <div class="pc-price">
+                                <span class="pc-old">$17.99</span>
+                                <span class="pc-new">$14.99</span>
+                            </div>
+                            <div class="pc-actions">
+                                <a href="./Assets/docs/Wall Calendars/Wall Calendar - Vintage 2025.docx"
+                                    class="pc-btn small-btn" title="Download" download>
+                                    <svg class="pc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path d="M12 3v12" />
+                                        <path d="M12 15l-4-4" />
+                                        <path d="M12 15l4-4" />
+                                        <line x1="5" y1="21" x2="19" y2="21" />
+                                    </svg>
+                                </a>
+                                <a href="#" class="pc-btn" aria-label="Add Wall Calendar to Cart">
+                                    <span>Add to Cart</span>
+                                    <svg class="pc-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2">
+                                        <circle cx="9" cy="21" r="1" />
+                                        <circle cx="20" cy="21" r="1" />
+                                        <path d="M1 1h4l2.68 13.39a2 2 0 001.98 1.61h9.72a2 2 0 001.98-1.61L23 6H6" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Ratings and Stock -->
+                        <div class="pc-meta">
+                            <div class="pc-rating">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 
+                                            5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 
+                                            5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 
+                                            5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 
+                                            5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <span class="pc-rcount">126 Reviews</span>
+                            </div>
+                            <div class="pc-stock">In Stock</div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <!-- Product 6 -->
+            <div class="col-md-4 col-sm-6 col-12 mb-4">
+                <article class="pc-card">
+                    <!-- Badge -->
+                    <div class="pc-badge-new">New Arrival</div>
+                    <!-- Product Image -->
+                    <div class="pc-img">
+                        <img src="./Assets/images/Wall-Calendars/wall-calendar(6).jpg"
+                            alt="Wall Calendar - Minimalist 2025">
+                    </div>
+                    <!-- Product Info -->
+                    <div class="pc-info">
+                        <div class="pc-cat">Calendar</div>
+                        <h2 class="pc-title">Wall Calendar - Minimalist 2025</h2>
+                        <p class="pc-desc">Clean minimalist layouts for organized monthly planning.</p>
+                        <!-- Features -->
+                        <div class="pc-feats">
+                            <span class="pc-feat">12 Months</span>
+                            <span class="pc-feat">Minimalist Layouts</span>
+                            <span class="pc-feat">Clean Typography</span>
+                        </div>
+                        <!-- Price and Actions -->
+                        <div class="pc-bottom">
+                            <div class="pc-price">
+                                <span class="pc-old">$15.99</span>
+                                <span class="pc-new">$13.99</span>
+                            </div>
+                            <div class="pc-actions">
+                                <a href="./Assets/docs/Wall Calendars/Wall Calendar - Minimalist 2025.docx"
+                                    class="pc-btn small-btn" title="Download" download>
+                                    <svg class="pc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path d="M12 3v12" />
+                                        <path d="M12 15l-4-4" />
+                                        <path d="M12 15l4-4" />
+                                        <line x1="5" y1="21" x2="19" y2="21" />
+                                    </svg>
+                                </a>
+                                <a href="#" class="pc-btn" aria-label="Add Wall Calendar to Cart">
+                                    <span>Add to Cart</span>
+                                    <svg class="pc-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2">
+                                        <circle cx="9" cy="21" r="1" />
+                                        <circle cx="20" cy="21" r="1" />
+                                        <path d="M1 1h4l2.68 13.39a2 2 0 001.98 1.61h9.72a2 2 0 001.98-1.61L23 6H6" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Ratings and Stock -->
+                        <div class="pc-meta">
+                            <div class="pc-rating">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 
+                                            5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 
+                                            5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <span class="pc-rcount">65 Reviews</span>
+                            </div>
+                            <div class="pc-stock">In Stock</div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+    <!-- ===== Wall Calendars Products End ===== -->
+    <div class="container mt-0 mb-0">
+        <div style="border-top: 2px solid #E3B505; width: 100%; margin: 2px;"></div>
+        <div style="border-top: 1px solid #2E2E2E; width: 100%; margin: 2px;"></div>
+    </div>
+    <!-- ===== Desk Calendars Products Start ===== -->
+    <section id="desk-calendars" class="container my-5">
+        <h2 class="text-center fw-bold mb-4">Desk Calendars</h2>
+        <div class="row">
+            <!-- Product 1 -->
+            <div class="col-md-4 col-sm-6 col-12 mb-4">
+                <article class="pc-card">
+                    <!-- Badge -->
+                    <div class="pc-badge-new">New Arrival</div>
+                    <!-- Product Image -->
+                    <div class="pc-img">
+                        <img src="./Assets/images/Desk-Calendars/desk-calendar(1).jpg"
+                            alt="Desk Calendar - Classic 2025">
+                    </div>
+                    <!-- Product Info -->
+                    <div class="pc-info">
+                        <div class="pc-cat">Desk Calendar</div>
+                        <h2 class="pc-title">Desk Calendar - Classic 2025</h2>
+                        <p class="pc-desc">Elegant desk calendar with clear monthly layout for your workspace.</p>
+                        <!-- Features -->
+                        <div class="pc-feats">
+                            <span class="pc-feat">12 Months</span>
+                            <span class="pc-feat">Premium Paper</span>
+                            <span class="pc-feat">Glossy Finish</span>
+                        </div>
+                        <!-- Price and Actions -->
+                        <div class="pc-bottom">
+                            <div class="pc-price">
+                                <span class="pc-old">$12.99</span>
+                                <span class="pc-new">$10.99</span>
+                            </div>
+                            <div class="pc-actions">
+                                <a href="./Assets/docs/Desk Calendars/Desk Calendar - Classic 2025.docx"
+                                    class="pc-btn small-btn" title="Download" download>
+                                    <svg class="pc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path d="M12 3v12" />
+                                        <path d="M12 15l-4-4" />
+                                        <path d="M12 15l4-4" />
+                                        <line x1="5" y1="21" x2="19" y2="21" />
+                                    </svg>
+                                </a>
+                                <a href="#" class="pc-btn" aria-label="Add Desk Calendar to Cart">
+                                    <span>Add to Cart</span>
+                                    <svg class="pc-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2">
+                                        <circle cx="9" cy="21" r="1" />
+                                        <circle cx="20" cy="21" r="1" />
+                                        <path d="M1 1h4l2.68 13.39a2 2 0 001.98 1.61h9.72a2 2 0 001.98-1.61L23 6H6" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Ratings and Stock -->
+                        <div class="pc-meta">
+                            <div class="pc-rating">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 
+                                            5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <span class="pc-rcount">98 Reviews</span>
+                            </div>
+                            <div class="pc-stock">In Stock</div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <!-- Product 2 -->
+            <div class="col-md-4 col-sm-6 col-12 mb-4">
+                <article class="pc-card">
+                    <!-- Badge -->
+                    <div class="pc-badge-low">Low Stock</div>
+                    <!-- Product Image -->
+                    <div class="pc-img">
+                        <img src="./Assets/images/Desk-Calendars/desk-calendar(2).jpg" alt=" Desk Calendar - Floral
+                                2025">
+                    </div>
+                    <!-- Product Info -->
+                    <div class="pc-info">
+                        <div class="pc-cat">Desk Calendar</div>
+                        <h2 class="pc-title">Desk Calendar - Floral 2025</h2>
+                        <p class="pc-desc">Bright , Vibrant and colorful floral design for your office desk.</p>
+                        <!-- Features -->
+                        <div class="pc-feats">
+                            <span class="pc-feat">12 Months</span>
+                            <span class="pc-feat">High-Quality Prints</span>
+                            <span class="pc-feat">Eco-Friendly Paper</span>
+                        </div>
+                        <!-- Price and Actions -->
+                        <div class="pc-bottom">
+                            <div class="pc-price">
+                                <span class="pc-old">$13.99</span>
+                                <span class="pc-new">$11.99</span>
+                            </div>
+                            <div class="pc-actions">
+                                <a href="./Assets/docs/Desk Calendars/Desk Calendar - Floral 2025.docx"
+                                    class="pc-btn small-btn" title="Download" download>
+                                    <svg class="pc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path d="M12 3v12" />
+                                        <path d="M12 15l-4-4" />
+                                        <path d="M12 15l4-4" />
+                                        <line x1="5" y1="21" x2="19" y2="21" />
+                                    </svg>
+                                </a>
+                                <a href="#" class="pc-btn" aria-label="Add Desk Calendar to Cart">
+                                    <span>Add to Cart</span>
+                                    <svg class="pc-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2">
+                                        <circle cx="9" cy="21" r="1" />
+                                        <circle cx="20" cy="21" r="1" />
+                                        <path d="M1 1h4l2.68 13.39a2 2 0 001.98 1.61h9.72a2 2 0 001.98-1.61L23 6H6" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Ratings and Stock -->
+                        <div class="pc-meta">
+                            <div class="pc-rating">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 
+                                            5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 
+                                            5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <span class="pc-rcount">76 Reviews</span>
+                            </div>
+                            <div class="pc-stock">Only 5 Left</div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <!-- Product 3 -->
+            <div class="col-md-4 col-sm-6 col-12 mb-4">
+                <article class="pc-card">
+                    <!-- Badge -->
+                    <div class="pc-badge">Best Seller</div>
+                    <!-- Product Image -->
+                    <div class="pc-img">
+                        <img src="./Assets/images/Desk-Calendars/desk-calendar(3).jpg"
+                            alt="Desk Calendar - Artistic 2025">
+                    </div>
+                    <!-- Product Info -->
+                    <div class="pc-info">
+                        <div class="pc-cat">Desk Calendar</div>
+                        <h2 class="pc-title">Desk Calendar - Artistic 2025</h2>
+                        <p class="pc-desc">Monthly artistic illustrations to inspire your desk workspace.</p>
+                        <!-- Features -->
+                        <div class="pc-feats">
+                            <span class="pc-feat">12 Months</span>
+                            <span class="pc-feat">High-Quality Prints</span>
+                            <span class="pc-feat">Glossy Finish</span>
+                        </div>
+                        <!-- Price and Actions -->
+                        <div class="pc-bottom">
+                            <div class="pc-price">
+                                <span class="pc-old">$14.49</span>
+                                <span class="pc-new">$12.99</span>
+                            </div>
+                            <div class="pc-actions">
+                                <a href="./Assets/docs/Desk Calendars/Desk Calendar - Artistic 2025.docx"
+                                    class="pc-btn small-btn" title="Download" download>
+                                    <svg class="pc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path d="M12 3v12" />
+                                        <path d="M12 15l-4-4" />
+                                        <path d="M12 15l4-4" />
+                                        <line x1="5" y1="21" x2="19" y2="21" />
+                                    </svg>
+                                </a>
+                                <a href="#" class="pc-btn" aria-label="Add Desk Calendar to Cart">
+                                    <span>Add to Cart</span>
+                                    <svg class="pc-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2">
+                                        <circle cx="9" cy="21" r="1" />
+                                        <circle cx="20" cy="21" r="1" />
+                                        <path d="M1 1h4l2.68 13.39a2 2 0 001.98 1.61h9.72a2 2 0 001.98-1.61L23 6H6" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Ratings and Stock -->
+                        <div class="pc-meta">
+                            <div class="pc-rating">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 
+                                            5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 
+                                            5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 
+                                            5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <span class="pc-rcount">150 Reviews</span>
+                            </div>
+                            <div class="pc-stock">In Stock</div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <!-- Product 4 -->
+            <div class="col-md-4 col-sm-6 col-12 mb-4">
+                <article class="pc-card">
+                    <!-- Badge -->
+                    <div class="pc-badge-low">Low Stock</div>
+                    <!-- Product Image -->
+                    <div class="pc-img">
+                        <img src="./Assets/images/Desk-Calendars/desk-calendar(4).jpg"
+                            alt="Desk Calendar - Nature 2025">
+                    </div>
+                    <!-- Product Info -->
+                    <div class="pc-info">
+                        <div class="pc-cat">Desk Calendar</div>
+                        <h2 class="pc-title">Desk Calendar - Nature 2025</h2>
+                        <p class="pc-desc">Showcasing beautiful nature scenes for your desktop.</p>
+                        <!-- Features -->
+                        <div class="pc-feats">
+                            <span class="pc-feat">12 Months</span>
+                            <span class="pc-feat">Glossy Finish</span>
+                            <span class="pc-feat">Eco-Friendly Paper</span>
+                        </div>
+                        <!-- Price and Actions -->
+                        <div class="pc-bottom">
+                            <div class="pc-price">
+                                <span class="pc-old">$14.99</span>
+                                <span class="pc-new">$13.99</span>
+                            </div>
+                            <div class="pc-actions">
+                                <a href="./Assets/docs/Desk Calendars/Desk Calendar - Nature 2025.docx"
+                                    class="pc-btn small-btn" title="Download" download>
+                                    <svg class="pc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path d="M12 3v12" />
+                                        <path d="M12 15l-4-4" />
+                                        <path d="M12 15l4-4" />
+                                        <line x1="5" y1="21" x2="19" y2="21" />
+                                    </svg>
+                                </a>
+                                <a href="#" class="pc-btn" aria-label="Add Desk Calendar to Cart">
+                                    <span>Add to Cart</span>
+                                    <svg class="pc-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2">
+                                        <circle cx="9" cy="21" r="1" />
+                                        <circle cx="20" cy="21" r="1" />
+                                        <path d="M1 1h4l2.68 13.39a2 2 0 001.98 1.61h9.72a2 2 0 001.98-1.61L23 6H6" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Ratings and Stock -->
+                        <div class="pc-meta">
+                            <div class="pc-rating">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <span class="pc-rcount">65 Reviews</span>
+                            </div>
+                            <div class="pc-stock">Only 3 Left</div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <!-- Product 5 -->
+            <div class="col-md-4 col-sm-6 col-12 mb-4">
+                <article class="pc-card">
+                    <!-- Badge -->
+                    <div class="pc-badge-new">New Arrival</div>
+                    <!-- Product Image -->
+                    <div class="pc-img">
+                        <img src="./Assets/images/Desk-Calendars/desk-calendar(5).jpg"
+                            alt="Desk Calendar - Minimalist 2025">
+                    </div>
+                    <!-- Product Info -->
+                    <div class="pc-info">
+                        <div class="pc-cat">Desk Calendar</div>
+                        <h2 class="pc-title">Desk Calendar - Minimalist 2025</h2>
+                        <p class="pc-desc">Clean minimalist design for organized desk planning.</p>
+                        <!-- Features -->
+                        <div class="pc-feats">
+                            <span class="pc-feat">12 Months</span>
+                            <span class="pc-feat">High-Quality Prints</span>
+                            <span class="pc-feat">Glossy Finish</span>
+                        </div>
+                        <!-- Price and Actions -->
+                        <div class="pc-bottom">
+                            <div class="pc-price">
+                                <span class="pc-old">$12.49</span>
+                                <span class="pc-new">$11.49</span>
+                            </div>
+                            <div class="pc-actions">
+                                <a href="./Assets/docs/Desk Calendars/Desk Calendar - Minimalist 2025.docx"
+                                    class="pc-btn small-btn" title="Download" download>
+                                    <svg class="pc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path d="M12 3v12" />
+                                        <path d="M12 15l-4-4" />
+                                        <path d="M12 15l4-4" />
+                                        <line x1="5" y1="21" x2="19" y2="21" />
+                                    </svg>
+                                </a>
+                                <a href="#" class="pc-btn" aria-label="Add Desk Calendar to Cart">
+                                    <span>Add to Cart</span>
+                                    <svg class="pc-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2">
+                                        <circle cx="9" cy="21" r="1" />
+                                        <circle cx="20" cy="21" r="1" />
+                                        <path d="M1 1h4l2.68 13.39a2 2 0 001.98 1.61h9.72a2 2 0 001.98-1.61L23 6H6" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Ratings and Stock -->
+                        <div class="pc-meta">
+                            <div class="pc-rating">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <span class="pc-rcount">88 Reviews</span>
+                            </div>
+                            <div class="pc-stock">In Stock</div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <!-- Product 6 -->
+            <div class="col-md-4 col-sm-6 col-12 mb-4">
+                <article class="pc-card">
+                    <!-- Badge -->
+                    <div class="pc-badge">Best Seller</div>
+                    <!-- Product Image -->
+                    <div class="pc-img">
+                        <img src="./Assets/images/Desk-Calendars/desk-calendar(6).jpg"
+                            alt="Desk Calendar - Artistic Minimal 2025">
+                    </div>
+                    <!-- Product Info -->
+                    <div class="pc-info">
+                        <div class="pc-cat">Desk Calendar</div>
+                        <h2 class="pc-title">Desk Calendar - Artistic Minimal 2025</h2>
+                        <p class="pc-desc">Combination of minimalist and artistic visuals for desk.</p>
+                        <!-- Features -->
+                        <div class="pc-feats">
+                            <span class="pc-feat">12 Months</span>
+                            <span class="pc-feat">High-Quality Prints</span>
+                            <span class="pc-feat">Eco-Friendly Paper</span>
+                        </div>
+                        <!-- Price and Actions -->
+                        <div class="pc-bottom">
+                            <div class="pc-price">
+                                <span class="pc-old">$13.49</span>
+                                <span class="pc-new">$12.49</span>
+                            </div>
+                            <div class="pc-actions">
+                                <a href="./Assets/docs/Desk Calendars/Desk Calendar - Artistic Minimal 2025.docx"
+                                    class="pc-btn small-btn" title="Download" download>
+                                    <svg class="pc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path d="M12 3v12" />
+                                        <path d="M12 15l-4-4" />
+                                        <path d="M12 15l4-4" />
+                                        <line x1="5" y1="21" x2="19" y2="21" />
+                                    </svg>
+                                </a>
+                                <a href="#" class="pc-btn" aria-label="Add Desk Calendar to Cart">
+                                    <span>Add to Cart</span>
+                                    <svg class="pc-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2">
+                                        <circle cx="9" cy="21" r="1" />
+                                        <circle cx="20" cy="21" r="1" />
+                                        <path d="M1 1h4l2.68 13.39a2 2 0 001.98 1.61h9.72a2 2 0 001.98-1.61L23 6H6" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Ratings and Stock -->
+                        <div class="pc-meta">
+                            <div class="pc-rating">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <span class="pc-rcount">132 Reviews</span>
+                            </div>
+                            <div class="pc-stock">In Stock</div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+    <!-- ===== Desk Calendars Products End ===== -->
+    <div class="container mt-0 mb-0">
+        <div style="border-top: 2px solid #E3B505; width: 100%; margin: 2px;"></div>
+        <div style="border-top: 1px solid #2E2E2E; width: 100%; margin: 2px;"></div>
+    </div>
+    <!-- ===== Planner Calendars Products Start ===== -->
+    <section id="planner-calendars" class="container my-5">
+        <h2 class="text-center fw-bold mb-4">Planner Calendars</h2>
+        <div class="row">
+            <!-- Product 1 -->
+            <div class="col-md-4 col-sm-6 col-12 mb-4">
+                <article class="pc-card">
+                    <!-- Badge -->
+                    <div class="pc-badge-new">New Arrival</div>
+                    <!-- Product Image -->
+                    <div class="pc-img">
+                        <img src="./Assets/images/Planner-Calendars/planner-calendar(1).jpg"
+                            alt="Planner Calendar - Monthly 2025">
+                    </div>
+                    <!-- Product Info -->
+                    <div class="pc-info">
+                        <div class="pc-cat">Planner</div>
+                        <h2 class="pc-title">Planner Calendar - Monthly 2025</h2>
+                        <p class="pc-desc">Organize your month efficiently with spacious layouts and notes sections.</p>
+                        <!-- Features -->
+                        <div class="pc-feats">
+                            <span class="pc-feat">Spacious Layouts</span>
+                            <span class="pc-feat">Notes Section</span>
+                            <span class="pc-feat">Monthly View</span>
+                        </div>
+                        <!-- Price and Actions -->
+                        <div class="pc-bottom">
+                            <div class="pc-price">
+                                <span class="pc-old">$20.99</span>
+                                <span class="pc-new">$18.99</span>
+                            </div>
+                            <div class="pc-actions">
+                                <a href="./Assets/docs/Planner Calendars/Planner Calendar - Monthly 2025.docx"
+                                    class="pc-btn small-btn" title="Download" download>
+                                    <svg class="pc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path d="M12 3v12" />
+                                        <path d="M12 15l-4-4" />
+                                        <path d="M12 15l4-4" />
+                                        <line x1="5" y1="21" x2="19" y2="21" />
+                                    </svg>
+                                </a>
+                                <a href="#" class="pc-btn" aria-label="Add Planner Calendar to Cart">
+                                    <span>Add to Cart</span>
+                                    <svg class="pc-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2">
+                                        <circle cx="9" cy="21" r="1" />
+                                        <circle cx="20" cy="21" r="1" />
+                                        <path d="M1 1h4l2.68 13.39a2 2 0 001.98 1.61h9.72a2 2 0 001.98-1.61L23 6H6" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Ratings and Stock -->
+                        <div class="pc-meta">
+                            <div class="pc-rating">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 
+                                            5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 
+                                            5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 
+                                            5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <span class="pc-rcount">92 Reviews</span>
+                            </div>
+                            <div class="pc-stock">In Stock</div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <!-- Product 2 -->
+            <div class="col-md-4 col-sm-6 col-12 mb-4">
+                <article class="pc-card">
+                    <div class="pc-badge">Best Seller</div>
+                    <div class="pc-img">
+                        <img src="./Assets/images/Planner-Calendars/planner-calendar(2).jpg"
+                            alt="Planner Calendar - Weekly 2025">
+                    </div>
+                    <div class="pc-info">
+                        <div class="pc-cat">Planner</div>
+                        <h2 class="pc-title">Planner Calendar - Weekly 2025</h2>
+                        <p class="pc-desc">Detailed weekly planner for appointments, tasks, and goals.</p>
+                        <div class="pc-feats">
+                            <span class="pc-feat">Weekly Layouts</span>
+                            <span class="pc-feat">Task Tracking</span>
+                            <span class="pc-feat">Goal Setting</span>
+                        </div>
+                        <div class="pc-bottom">
+                            <div class="pc-price">
+                                <span class="pc-old">$21.99</span>
+                                <span class="pc-new">$19.99</span>
+                            </div>
+                            <div class="pc-actions">
+                                <a href="./Assets/docs/Planner Calendars/Planner Calendar - Weekly 2025.docx"
+                                    class="pc-btn small-btn" title="Download" download>
+                                    <svg class="pc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path d="M12 3v12" />
+                                        <path d="M12 15l-4-4" />
+                                        <path d="M12 15l4-4" />
+                                        <line x1="5" y1="21" x2="19" y2="21" />
+                                    </svg>
+                                </a>
+                                <a href="#" class="pc-btn" aria-label="Add Planner Calendar to Cart">
+                                    <span>Add to Cart</span>
+                                    <svg class="pc-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2">
+                                        <circle cx="9" cy="21" r="1" />
+                                        <circle cx="20" cy="21" r="1" />
+                                        <path d="M1 1h4l2.68 13.39a2 2 0 001.98 1.61h9.72a2 2 0 001.98-1.61L23 6H6" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="pc-meta">
+                            <div class="pc-rating">
+                                <svg width="16" height="16" fill="#FFD700" viewBox="0 0 24 24">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg width="16" height="16" fill="#FFD700" viewBox="0 0 24 24">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg width="16" height="16" fill="#FFD700" viewBox="0 0 24 24">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg width="16" height="16" fill="#FFD700" viewBox="0 0 24 24">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg width="16" height="16" fill="#FFD700" viewBox="0 0 24 24">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <span class="pc-rcount">147 Reviews</span>
+                            </div>
+                            <div class="pc-stock">In Stock</div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <!-- Product 3 -->
+            <div class="col-md-4 col-sm-6 col-12 mb-4">
+                <article class="pc-card">
+                    <div class="pc-badge-low">Low Stock</div>
+                    <div class="pc-img">
+                        <img src="./Assets/images/Planner-Calendars/planner-calendar(3).jpg"
+                            alt="Planner Calendar - Daily 2025">
+                    </div>
+                    <div class="pc-info">
+                        <div class="pc-cat">Planner</div>
+                        <h2 class="pc-title">Planner Calendar - Daily 2025</h2>
+                        <p class="pc-desc">Perfect daily planner for detailed scheduling and time management.</p>
+                        <div class="pc-feats">
+                            <span class="pc-feat">Daily Layouts</span>
+                            <span class="pc-feat">Time Management</span>
+                            <span class="pc-feat">Detailed Notes</span>
+                        </div>
+                        <div class="pc-bottom">
+                            <div class="pc-price">
+                                <span class="pc-old">$22.99</span>
+                                <span class="pc-new">$20.49</span>
+                            </div>
+                            <div class="pc-actions">
+                                <a href="./Assets/docs/Planner Calendars/Planner Calendar - Daily 2025.docx"
+                                    class="pc-btn small-btn" title="Download" download>
+                                    <svg class="pc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path d="M12 3v12" />
+                                        <path d="M12 15l-4-4" />
+                                        <path d="M12 15l4-4" />
+                                        <line x1="5" y1="21" x2="19" y2="21" />
+                                    </svg>
+                                </a>
+                                <a href="#" class="pc-btn" aria-label="Add Planner Calendar to Cart">
+                                    <span>Add to Cart</span>
+                                    <svg class="pc-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2">
+                                        <circle cx="9" cy="21" r="1" />
+                                        <circle cx="20" cy="21" r="1" />
+                                        <path d="M1 1h4l2.68 13.39a2 2 0 001.98 1.61h9.72a2 2 0 001.98-1.61L23 6H6" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="pc-meta">
+                            <div class="pc-rating">
+                                <svg width="16" height="16" fill="#FFD700" viewBox="0 0 24 24">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg width="16" height="16" fill="#FFD700" viewBox="0 0 24 24">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg width="16" height="16" fill="#FFD700" viewBox="0 0 24 24">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg width="16" height="16" fill="#FFD700" viewBox="0 0 24 24">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <span class="pc-rcount">101 Reviews</span>
+                            </div>
+                            <div class="pc-stock">Only 8 Left</div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <!-- Product 4 -->
+            <div class="col-md-4 col-sm-6 col-12 mb-4">
+                <article class="pc-card">
+                    <!-- Badge -->
+                    <div class="pc-badge">Best Seller</div>
+                    <!-- Product Image -->
+                    <div class="pc-img">
+                        <img src="./Assets/images/Planner-Calendars/planner-calendar(4).jpg"
+                            alt="Planner Calendar - Academic 2025">
+                    </div>
+                    <!-- Product Info -->
+                    <div class="pc-info">
+                        <div class="pc-cat">Planner</div>
+                        <h2 class="pc-title">Planner Calendar - Academic 2025</h2>
+                        <p class="pc-desc">Planner designed specifically for students and educators to manage schedules
+                            efficiently.
+                        </p>
+                        <!-- Features -->
+                        <div class="pc-feats">
+                            <span class="pc-feat">Student Friendly</span>
+                            <span class="pc-feat">Academic Layouts</span>
+                            <span class="pc-feat">Goal Tracking</span>
+                        </div>
+                        <!-- Price and Actions -->
+                        <div class="pc-bottom">
+                            <div class="pc-price">
+                                <span class="pc-old">$18.49</span>
+                                <span class="pc-new">$15.99</span>
+                            </div>
+                            <div class="pc-actions">
+                                <a href="./Assets/docs/Planner Calendars/Planner Calendar - Academic 2025.docx"
+                                    class="pc-btn small-btn" title="Download" download>
+                                    <svg class="pc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path d="M12 3v12" />
+                                        <path d="M12 15l-4-4" />
+                                        <path d="M12 15l4-4" />
+                                        <line x1="5" y1="21" x2="19" y2="21" />
+                                    </svg>
+                                </a>
+                                <a href="#" class="pc-btn" aria-label="Add Planner Calendar to Cart">
+                                    <span>Add to Cart</span>
+                                    <svg class="pc-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2">
+                                        <circle cx="9" cy="21" r="1" />
+                                        <circle cx="20" cy="21" r="1" />
+                                        <path d="M1 1h4l2.68 13.39a2 2 0 001.98 1.61h9.72a2 2 0 001.98-1.61L23 6H6" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Ratings and Stock -->
+                        <div class="pc-meta">
+                            <div class="pc-rating">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <span class="pc-rcount">128 Reviews</span>
+                            </div>
+                            <div class="pc-stock">In Stock</div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <!-- Product 5 -->
+            <div class="col-md-4 col-sm-6 col-12 mb-4">
+                <article class="pc-card">
+                    <!-- Badge -->
+                    <div class="pc-badge-new">New Arrival</div>
+                    <!-- Product Image -->
+                    <div class="pc-img">
+                        <img src="./Assets/images/Planner-Calendars/planner-calendar(5).jpg"
+                            alt="Planner Calendar - Professional 2025">
+                    </div>
+                    <!-- Product Info -->
+                    <div class="pc-info">
+                        <div class="pc-cat">Planner</div>
+                        <h2 class="pc-title">Planner Calendar - Professional 2025</h2>
+                        <p class="pc-desc">Sleek planner for professionals to track projects, deadlines, and meetings
+                            efficiently.
+                        </p>
+                        <!-- Features -->
+                        <div class="pc-feats">
+                            <span class="pc-feat">Project Tracking</span>
+                            <span class="pc-feat">Meeting Planner</span>
+                            <span class="pc-feat">Professional Design</span>
+                        </div>
+                        <!-- Price and Actions -->
+                        <div class="pc-bottom">
+                            <div class="pc-price">
+                                <span class="pc-old">$21.99</span>
+                                <span class="pc-new">$19.49</span>
+                            </div>
+                            <div class="pc-actions">
+                                <a href="./Assets/docs/Planner Calendars/Planner Calendar - Professional 2025.docx"
+                                    class="pc-btn small-btn" title="Download" download>
+                                    <svg class="pc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path d="M12 3v12" />
+                                        <path d="M12 15l-4-4" />
+                                        <path d="M12 15l4-4" />
+                                        <line x1="5" y1="21" x2="19" y2="21" />
+                                    </svg>
+                                </a>
+                                <a href="#" class="pc-btn" aria-label="Add Planner Calendar to Cart">
+                                    <span>Add to Cart</span>
+                                    <svg class="pc-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2">
+                                        <circle cx="9" cy="21" r="1" />
+                                        <circle cx="20" cy="21" r="1" />
+                                        <path d="M1 1h4l2.68 13.39a2 2 0 001.98 1.61h9.72a2 2 0 001.98-1.61L23 6H6" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Ratings and Stock -->
+                        <div class="pc-meta">
+                            <div class="pc-rating">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <span class="pc-rcount">121 Reviews</span>
+                            </div>
+                            <div class="pc-stock">In Stock</div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <!-- Product 6 -->
+            <div class="col-md-4 col-sm-6 col-12 mb-4">
+                <article class="pc-card">
+                    <!-- Badge -->
+                    <div class="pc-badge-low">Low Stock</div>
+                    <!-- Product Image -->
+                    <div class="pc-img">
+                        <img src="./Assets/images/Planner-Calendars/planner-calendar(6).jpg"
+                            alt="Planner Calendar - Creative 2025">
+                    </div>
+                    <!-- Product Info -->
+                    <div class="pc-info">
+                        <div class="pc-cat">Planner</div>
+                        <h2 class="pc-title">Planner Calendar - Creative 2025</h2>
+                        <p class="pc-desc">Planner with creative layouts and inspirational quotes for daily motivation.
+                        </p>
+                        <!-- Features -->
+                        <div class="pc-feats">
+                            <span class="pc-feat">Inspirational Quotes</span>
+                            <span class="pc-feat">Creative Layouts</span>
+                            <span class="pc-feat">Daily Motivation</span>
+                        </div>
+                        <!-- Price and Actions -->
+                        <div class="pc-bottom">
+                            <div class="pc-price">
+                                <span class="pc-old">$22.49</span>
+                                <span class="pc-new">$20.49</span>
+                            </div>
+                            <div class="pc-actions">
+                                <a href="./Assets/docs/Planner Calendars/Planner Calendar - Creative 2025.docx"
+                                    class="pc-btn small-btn" title="Download" download>
+                                    <svg class="pc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path d="M12 3v12" />
+                                        <path d="M12 15l-4-4" />
+                                        <path d="M12 15l4-4" />
+                                        <line x1="5" y1="21" x2="19" y2="21" />
+                                    </svg>
+                                </a>
+                                <a href="#" class="pc-btn" aria-label="Add Planner Calendar to Cart">
+                                    <span>Add to Cart</span>
+                                    <svg class="pc-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2">
+                                        <circle cx="9" cy="21" r="1" />
+                                        <circle cx="20" cy="21" r="1" />
+                                        <path d="M1 1h4l2.68 13.39a2 2 0 001.98 1.61h9.72a2 2 0 001.98-1.61L23 6H6" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Ratings and Stock -->
+                        <div class="pc-meta">
+                            <div class="pc-rating">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <span class="pc-rcount">110 Reviews</span>
+                            </div>
+                            <div class="pc-stock">Only 8 Left</div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+    <!-- ===== Planner Calendars Products End ===== -->
+    <!-- Footer START -->
+    <footer class="footer bg-dark py-5">
+        <div class="container">
+            <div class="d-flex flex-row flex-wrap">
+                <!-- Company Info -->
+                <div class="footer-col">
+                    <h5 class="text-warning fw-bold">Ryana Calendars</h5>
+                    <p class="text-light">123 Ryana Street, Karachi, Pakistan</p>
+                    <p class="text-light">Email: <a href="mailto:info@ryanacalendars.com"
+                            class="text-warning">info@ryanacalendars.com</a>
+                    </p>
+                    <p class="text-light">Phone: <a href="tel:+921234567890" class="text-warning">+92 123 456 7890</a>
+                    </p>
+                </div>
+                <!-- Products -->
+                <div class="footer-col">
+                    <h5 class="text-warning fw-bold">Products</h5>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="./journals.html" class="text-light text-decoration-none">Journals</a>
+                        </li>
+                        <li>
+                            <a href="./diaries.html" class="text-light text-decoration-none">Diaries</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-light text-decoration-none">Calendars</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Quick Links -->
+                <div class="footer-col">
+                    <h5 class="text-warning fw-bold">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="index.html#products" class="text-light text-decoration-none">All Products</a>
+                        </li>
+                        <li>
+                            <a href="index.html#home-contact" class="text-light text-decoration-none">Contact Us</a>
+                        </li>
+                        <li>
+                            <a href="Assets/docs/PriceList.docx" class="text-light text-decoration-none" download>Price
+                                List</a>
+                        </li>
+                        <li>
+                            <a href="index.html#about-us" class="text-light text-decoration-none">About Us</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Social Media -->
+                <div class="footer-col">
+                    <h5 class="text-warning fw-bold">Follow Us</h5>
+                    <div class="social-icons d-flex gap-3">
+                        <a href="#" class="text-warning fs-4">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a href="#" class="text-warning fs-4">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        <a href="#" class="text-warning fs-4">
+                            <i class="bi bi-twitter"></i>
+                        </a>
+                        <a href="#" class="text-warning fs-4">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <hr class="border-secondary my-4">
+            <div class="text-center text-light small"> &copy; 2025 Ryana Calendars. All Rights Reserved. </div>
+        </div>
+    </footer>
+    <!-- Footer END -->
+    <!-- ===== Bootstrap JS ===== -->
+    <script src="./Assets/js/bootstrap.bundle.min.js"></script>
+    <!-- ===== JS initializer (for calendar carousel) ===== -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var el = document.getElementById('calendarCarousel'); // use calendar page carousel ID
+            if (!el) return;
+            try {
+                if (typeof bootstrap !== 'undefined' && bootstrap.Carousel) {
+                    var carousel = bootstrap.Carousel.getInstance(el) || new bootstrap.Carousel(el, {
+                        interval: 4000,
+                        pause: 'hover',
+                        ride: 'carousel',
+                        touch: true
+                    });
+                    carousel.cycle();
+                } else {
+                    console.warn('Bootstrap JS not found. Carousel will not work.');
+                }
+            } catch (err) {
+                console.error('Carousel init error:', err);
+            }
+        });
+    </script>
+    <!-- Simple "Add to Cart" feedback -->
+    <script>
+        document.querySelectorAll('.add-to-cart-btn, .pc-btn[aria-label^="Add"]').forEach(btn => {
+            btn.addEventListener('click', e => {
+                e.preventDefault(); // stop page jump
+                const productName =
+                    btn.dataset.product ||
+                    btn.getAttribute('aria-label')?.replace('Add ', '').replace(' to Cart', '') ||
+                    'Product';
+
+                // Show a friendly alert message
+                alert(`${productName} added to cart!`);
+            });
+        });
+    </script>
+
+</body>
+
+</html>
